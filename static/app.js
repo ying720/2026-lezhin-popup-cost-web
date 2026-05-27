@@ -149,13 +149,18 @@ function renderCategoryRow(category, groupRows) {
   const selectedQty = groupRows.reduce((sum, row) => sum + Number(row.qty || 0), 0);
   const selectedKinds = groupRows.filter(row => Number(row.qty || 0) > 0).length;
   const selectedText = selectedQty > 0 ? `已選 ${fmtNumber(selectedQty)} 件` : "尚未選擇";
+  const countOverride = Math.max(
+    0,
+    ...groupRows.map(row => Number(row.product?.category_count || 0)).filter(Number.isFinite)
+  );
+  const displayCount = countOverride > 0 ? countOverride : groupRows.length;
 
   return `
     <tr class="product-category-row">
       <td colspan="6">
         <div class="category-title">${escapeHtml(category)}</div>
         <div class="category-meta">
-          <span>共 ${fmtNumber(groupRows.length)} 款</span>
+          <span>共 ${fmtNumber(displayCount)} 款</span>
           <span>${escapeHtml(selectedText)}</span>
           ${selectedKinds > 0 ? `<span>${fmtNumber(selectedKinds)} 款有選</span>` : ""}
         </div>
