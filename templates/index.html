@@ -38,7 +38,7 @@
         </label>
       </div>
 
-      <details open>
+      <details>
         <summary>額外費用</summary>
         <div class="expense-grid">
           <label>交通費 <input data-extra="transport" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
@@ -147,8 +147,13 @@
     </div>
   </div>
 
+  <script id="catalog-data" type="application/json">
+    {{ catalog | tojson }}
+  </script>
   <script>
-    window.__CATALOG__ = {{ catalog | tojson }};
+    window.__CATALOG__ = JSON.parse(
+      document.getElementById("catalog-data").textContent
+    );
   </script>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
