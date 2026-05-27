@@ -373,13 +373,6 @@ function bindInputs() {
   const mobileResetBtn = $("#mobileResetBtn");
   if (mobileResetBtn) mobileResetBtn.addEventListener("click", clearAllQuantities);
 
-  $("#defaultBtn").addEventListener("click", () => {
-    loadQuantities(true);
-    saveQuantities();
-    renderProducts();
-    calculate();
-  });
-
   $("#printBtn").addEventListener("click", () => window.print());
 }
 

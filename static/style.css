@@ -1196,3 +1196,80 @@ td.note {
     display: none !important;
   }
 }
+
+/* Mobile viewport overflow fix for long event names */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.hero,
+.layout,
+.panel,
+.controls,
+.summary,
+.products-panel,
+.products-head,
+.toolbar,
+.table-wrap,
+.mobile-total-bar {
+  min-width: 0;
+  max-width: 100%;
+}
+
+input,
+select,
+button,
+textarea {
+  min-width: 0;
+  max-width: 100%;
+}
+
+select {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .hero,
+  .layout {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .controls,
+  .summary,
+  .products-panel,
+  .panel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .controls label,
+  .controls select,
+  .controls input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .controls select {
+    display: block;
+    padding-right: 42px;
+  }
+
+  .products-head,
+  .toolbar,
+  .checkline {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mobile-total-bar {
+    width: auto;
+    max-width: calc(100vw - 24px);
+  }
+}
