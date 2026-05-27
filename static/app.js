@@ -103,6 +103,67 @@ function productMatchesSearch(product, query) {
   return !query || haystack.includes(query);
 }
 
+function productCategory(product) {
+  if (product.category) return String(product.category).trim();
+  const item = String(product.item || "").trim();
+  return item.split(/\n/)[0].trim() || "其他商品";
+}
+
+function visibleProductRows(products, query, selectedOnly) {
+  const rows = [];
+  for (const p of products) {
+    const qty = normalizeQty(quantities[p.id] || 0, p);
+    quantities[p.id] = qty;
+    if (!productMatchesSearch(p, query)) continue;
+    if (selectedOnly && qty <= 0) continue;
+    rows.push({ product: p, qty });
+  }
+  return rows;
+}
+
+function renderProductRow(p, qty, currency) {
+  const line = Number(p.price) * qty;
+  return `
+    <tr class="product-row" data-id="${escapeHtml(p.id)}" data-price="${Number(p.price || 0)}" data-currency="${escapeHtml(currency || p.currency)}" data-limit="${productLimit(p) ?? ""}">
+      <td data-label="品項" class="product-name-cell">
+        <strong>${escapeHtml(p.item)}</strong>
+        ${p.limit ? `<div class="limit-badge">限購 ${escapeHtml(p.limit)} 件</div>` : ""}
+      </td>
+      <td data-label="款式">${escapeHtml(p.variant || "—")}</td>
+      <td data-label="單價" class="price">${escapeHtml(currency || p.currency)} ${fmtNumber(p.price)}</td>
+      <td data-label="數量" class="qty-cell">
+        <div class="qty-control">
+          <button type="button" data-action="minus" aria-label="減少">−</button>
+          <input type="number" inputmode="numeric" min="0" ${productLimit(p) !== null ? `max="${productLimit(p)}"` : ""} step="1" value="${qty}" data-qty aria-label="${escapeHtml(p.item)} 數量">
+          <button type="button" data-action="plus" aria-label="增加" ${productLimit(p) !== null && qty >= productLimit(p) ? "disabled" : ""}>＋</button>
+        </div>
+        ${productLimit(p) !== null ? `<div class="limit-message" data-limit-message>${qty >= productLimit(p) ? "已達限購上限" : `最多可選 ${productLimit(p)} 件`}</div>` : ""}
+      </td>
+      <td data-label="小計" class="line-total">${escapeHtml(currency || p.currency)} ${fmtNumber(line)}</td>
+      <td data-label="說明" class="note">${escapeHtml(p.note || "")}</td>
+    </tr>
+  `;
+}
+
+function renderCategoryRow(category, groupRows) {
+  const selectedQty = groupRows.reduce((sum, row) => sum + Number(row.qty || 0), 0);
+  const selectedKinds = groupRows.filter(row => Number(row.qty || 0) > 0).length;
+  const selectedText = selectedQty > 0 ? `已選 ${fmtNumber(selectedQty)} 件` : "尚未選擇";
+
+  return `
+    <tr class="product-category-row">
+      <td colspan="6">
+        <div class="category-title">${escapeHtml(category)}</div>
+        <div class="category-meta">
+          <span>共 ${fmtNumber(groupRows.length)} 款</span>
+          <span>${escapeHtml(selectedText)}</span>
+          ${selectedKinds > 0 ? `<span>${fmtNumber(selectedKinds)} 款有選</span>` : ""}
+        </div>
+      </td>
+    </tr>
+  `;
+}
+
 function renderProducts() {
   const tbody = $("#productsBody");
   const q = $("#searchInput").value.trim().toLowerCase();
@@ -110,6 +171,7 @@ function renderProducts() {
   const products = eventProducts();
   const meta = eventMeta();
   const currency = meta.currency || "TWD";
+  const grouped = isSpaklzEvent();
 
   const shortEventName = currentEvent
     .replace(/^SPAKLZ\s+2026\s+WORLD\s+TOUR\s*/i, "")
@@ -121,40 +183,35 @@ function renderProducts() {
     <span class="event-meta-chip">${products.length} 項</span>
   `;
 
-  const rows = [];
-  for (const p of products) {
-    const qty = normalizeQty(quantities[p.id] || 0, p);
-    quantities[p.id] = qty;
-    if (!productMatchesSearch(p, q)) continue;
-    if (selectedOnly && qty <= 0) continue;
+  const visibleRows = visibleProductRows(products, q, selectedOnly);
 
-    const line = Number(p.price) * qty;
-    rows.push(`
-      <tr class="product-row" data-id="${escapeHtml(p.id)}" data-price="${Number(p.price || 0)}" data-currency="${escapeHtml(currency || p.currency)}" data-limit="${productLimit(p) ?? ""}">
-        <td data-label="品項" class="product-name-cell">
-          <strong>${escapeHtml(p.item)}</strong>
-          ${p.limit ? `<div class="limit-badge">限購 ${escapeHtml(p.limit)} 件</div>` : ""}
-        </td>
-        <td data-label="款式">${escapeHtml(p.variant || "—")}</td>
-        <td data-label="單價" class="price">${escapeHtml(currency || p.currency)} ${fmtNumber(p.price)}</td>
-        <td data-label="數量" class="qty-cell">
-          <div class="qty-control">
-            <button type="button" data-action="minus" aria-label="減少">−</button>
-            <input type="number" inputmode="numeric" min="0" ${productLimit(p) !== null ? `max="${productLimit(p)}"` : ""} step="1" value="${qty}" data-qty aria-label="${escapeHtml(p.item)} 數量">
-            <button type="button" data-action="plus" aria-label="增加" ${productLimit(p) !== null && qty >= productLimit(p) ? "disabled" : ""}>＋</button>
-          </div>
-          ${productLimit(p) !== null ? `<div class="limit-message" data-limit-message>${qty >= productLimit(p) ? "已達限購上限" : `最多可選 ${productLimit(p)} 件`}</div>` : ""}
-        </td>
-        <td data-label="小計" class="line-total">${escapeHtml(currency || p.currency)} ${fmtNumber(line)}</td>
-        <td data-label="說明" class="note">${escapeHtml(p.note || "")}</td>
-      </tr>
-    `);
+  if (!visibleRows.length) {
+    tbody.innerHTML = `<tr class="empty-row"><td colspan="6">找不到符合條件的商品。</td></tr>`;
+    return;
   }
 
-  tbody.innerHTML = rows.join("") || `<tr class="empty-row"><td colspan="6">找不到符合條件的商品。</td></tr>`;
+  if (!grouped) {
+    tbody.innerHTML = visibleRows.map(({ product, qty }) => renderProductRow(product, qty, currency)).join("");
+    bindProductControls(tbody);
+    return;
+  }
+
+  const groups = new Map();
+  for (const row of visibleRows) {
+    const category = productCategory(row.product);
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(row);
+  }
+
+  const html = [];
+  for (const [category, groupRows] of groups.entries()) {
+    html.push(renderCategoryRow(category, groupRows));
+    html.push(...groupRows.map(({ product, qty }) => renderProductRow(product, qty, currency)));
+  }
+
+  tbody.innerHTML = html.join("");
   bindProductControls(tbody);
 }
-
 function bindProductControls(tbody) {
   tbody.querySelectorAll("button[data-action]").forEach(btn => {
     btn.addEventListener("click", () => {
