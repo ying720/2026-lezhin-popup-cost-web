@@ -367,16 +367,15 @@ button.secondary:hover { background: #e6d2c0; }
 }
 
 .products-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
   margin-bottom: 14px;
 }
 
 .products-head > div:first-child {
-  min-width: 240px;
-  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
 }
 #eventInfo.event-meta,
 #eventInfo {
@@ -394,7 +393,7 @@ button.secondary:hover { background: #e6d2c0; }
   font-weight: 700;
 }
 .event-meta-name {
-  color: var(--text);
+  color: var(--ink);
   font-size: 14px;
   line-height: 1.25;
   max-width: 100%;
@@ -406,15 +405,21 @@ button.secondary:hover { background: #e6d2c0; }
   padding: 3px 9px;
   border-radius: 999px;
   background: #f2e8dc;
-  color: var(--brown);
+  color: var(--accent-dark);
   font-weight: 800;
   white-space: nowrap;
 }
 .toolbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
   gap: 12px;
   align-items: center;
-  min-width: min(520px, 100%);
+  width: 100%;
+  min-width: 0;
+}
+.toolbar input[type="search"] {
+  width: 100%;
+  min-width: 0;
 }
 .checkline {
   flex-direction: row;
@@ -509,7 +514,11 @@ td.note {
 
 @media (max-width: 980px) {
   .hero { flex-direction: column; }
-  .products-head, .toolbar { flex-direction: column; align-items: stretch; }
+  .products-head { grid-template-columns: 1fr; }
+  .toolbar {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
 }
 
 @media (max-width: 720px) {
