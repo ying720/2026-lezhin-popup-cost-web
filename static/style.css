@@ -1275,36 +1275,36 @@ select {
 }
 
 
-/* SPAKLZ 2026 WORLD TOUR theme: poster-inspired deep teal + neon lime.
+/* SPAKLZ 2026 WORLD TOUR theme: poster-inspired royal blue + lime + white.
    The class is applied only when the selected event name contains "SPAKLZ". */
 body.theme-spaklz {
-  --bg: #09292f;
-  --panel: #f6fff1;
-  --ink: #142321;
-  --muted: #596b66;
-  --line: rgba(19, 93, 86, 0.24);
-  --accent: #d9f747;
-  --accent-dark: #126f62;
-  --soft: #e6f5d8;
-  --gold: #d9f747;
-  --gold-soft: #efffd0;
-  --danger: #bd3650;
-  --ok: #0f8a5f;
+  --bg: #eef3ff;
+  --panel: #ffffff;
+  --ink: #1a2340;
+  --muted: #5f6886;
+  --line: rgba(14, 44, 124, 0.16);
+  --accent: #cfe63a;
+  --accent-dark: #0f2f7a;
+  --soft: #f4f8d6;
+  --gold: #cfe63a;
+  --gold-soft: #f8ffd9;
+  --danger: #d34d63;
+  --ok: #1f8d6a;
   background:
-    radial-gradient(circle at 14% 8%, rgba(217, 247, 71, 0.22), transparent 28%),
-    radial-gradient(circle at 88% 8%, rgba(18, 111, 98, 0.62), transparent 34%),
-    linear-gradient(180deg, #071b24 0%, #0d3b42 38%, #0f5d55 100%);
+    radial-gradient(circle at 12% 8%, rgba(207, 230, 58, 0.16), transparent 24%),
+    radial-gradient(circle at 84% 12%, rgba(255, 255, 255, 0.08), transparent 28%),
+    linear-gradient(180deg, #07286c 0%, #0b3a93 42%, #123f99 100%);
 }
 
 body.theme-spaklz .hero {
   position: relative;
   overflow: hidden;
-  color: #f7ffe9;
-  border-bottom: 1px solid rgba(217, 247, 71, 0.22);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   background:
-    radial-gradient(circle at 76% 24%, rgba(217, 247, 71, 0.28), transparent 18%),
-    radial-gradient(circle at 20% 10%, rgba(18, 111, 98, 0.65), transparent 42%),
-    linear-gradient(135deg, #111923 0%, #0b3840 46%, #126f62 100%);
+    radial-gradient(circle at 78% 24%, rgba(207, 230, 58, 0.20), transparent 16%),
+    radial-gradient(circle at 16% 8%, rgba(255, 255, 255, 0.09), transparent 34%),
+    linear-gradient(135deg, #06215d 0%, #0b347f 46%, #0e3f9f 100%);
 }
 
 body.theme-spaklz .hero::after {
@@ -1312,7 +1312,7 @@ body.theme-spaklz .hero::after {
   position: absolute;
   right: clamp(-18px, 4vw, 40px);
   bottom: -20px;
-  color: rgba(217, 247, 71, 0.12);
+  color: rgba(207, 230, 58, 0.14);
   font-size: clamp(52px, 14vw, 170px);
   font-weight: 1000;
   letter-spacing: -0.08em;
@@ -1326,17 +1326,17 @@ body.theme-spaklz .hero > * {
 }
 
 body.theme-spaklz .eyebrow {
-  color: #d9f747;
+  color: #cfe63a;
 }
 
 body.theme-spaklz .sub {
-  color: rgba(247, 255, 233, 0.84);
+  color: rgba(255, 255, 255, 0.84);
 }
 
 body.theme-spaklz .panel {
-  background: rgba(246, 255, 241, 0.96);
-  border-color: rgba(217, 247, 71, 0.28);
-  box-shadow: 0 22px 50px rgba(2, 18, 22, 0.24);
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(14, 44, 124, 0.14);
+  box-shadow: 0 22px 50px rgba(4, 17, 53, 0.20);
 }
 
 body.theme-spaklz input,
@@ -1347,40 +1347,40 @@ body.theme-spaklz .budget-line,
 body.theme-spaklz .cash-line,
 body.theme-spaklz .table-wrap,
 body.theme-spaklz .checkline {
-  background: #fbfff7;
-  border-color: rgba(18, 111, 98, 0.22);
+  background: #ffffff;
+  border-color: rgba(14, 44, 124, 0.14);
 }
 
 body.theme-spaklz input:focus,
 body.theme-spaklz select:focus {
-  outline-color: rgba(217, 247, 71, 0.42);
-  border-color: #126f62;
+  outline-color: rgba(207, 230, 58, 0.34);
+  border-color: #0f2f7a;
 }
 
 body.theme-spaklz button {
-  background: #d9f747;
-  color: #0e2225;
-  box-shadow: 0 10px 22px rgba(217, 247, 71, 0.18);
+  background: #cfe63a;
+  color: #142344;
+  box-shadow: 0 10px 22px rgba(207, 230, 58, 0.20);
 }
 
 body.theme-spaklz button:hover {
-  background: #c7ef34;
+  background: #bfd92b;
 }
 
 body.theme-spaklz button.secondary,
 body.theme-spaklz .mobile-clear-btn {
-  background: rgba(217, 247, 71, 0.16);
-  color: #d9f747;
-  border: 1px solid rgba(217, 247, 71, 0.38);
+  background: rgba(15, 47, 122, 0.08);
+  color: #0f2f7a;
+  border: 1px solid rgba(15, 47, 122, 0.20);
 }
 
 body.theme-spaklz .card.primary {
-  background: linear-gradient(135deg, #0a3038 0%, #126f62 100%);
-  color: #f7ffe9;
+  background: linear-gradient(135deg, #0a2665 0%, #0f3f99 100%);
+  color: #ffffff;
 }
 
 body.theme-spaklz .card.primary span {
-  color: rgba(247, 255, 233, 0.76);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 body.theme-spaklz summary,
@@ -1388,56 +1388,56 @@ body.theme-spaklz .event-meta-chip,
 body.theme-spaklz .limit-badge,
 body.theme-spaklz .reward-count-text,
 body.theme-spaklz td.line-total {
-  color: #126f62;
+  color: #0f2f7a;
 }
 
 body.theme-spaklz .event-meta-chip,
 body.theme-spaklz .limit-badge {
-  background: rgba(217, 247, 71, 0.24);
+  background: rgba(207, 230, 58, 0.20);
 }
 
 body.theme-spaklz th {
-  background: #eaffbd;
-  color: #126f62;
+  background: #eef3ff;
+  color: #0f2f7a;
 }
 
 body.theme-spaklz tbody tr:hover {
-  background: #f3ffe7;
+  background: #f7faff;
 }
 
 body.theme-spaklz .reward-panel {
-  border-color: rgba(217, 247, 71, 0.58);
-  border-left-color: #d9f747;
-  background: linear-gradient(180deg, #f5ffd9 0%, #fbfff2 100%);
-  box-shadow: 0 10px 24px rgba(5, 50, 48, 0.12);
+  border-color: rgba(207, 230, 58, 0.50);
+  border-left-color: #cfe63a;
+  background: linear-gradient(180deg, #fcffef 0%, #ffffff 100%);
+  box-shadow: 0 10px 24px rgba(7, 28, 74, 0.10);
 }
 
 body.theme-spaklz .reward-summary-badge.achieved,
 body.theme-spaklz .reward-item.achieved .reward-status,
 body.theme-spaklz .reward-item.manual .reward-status {
-  background: #126f62;
-  color: #f7ffe9;
+  background: #0f2f7a;
+  color: #ffffff;
 }
 
 body.theme-spaklz .reward-dot {
-  background: #d9f747;
-  box-shadow: 0 0 0 3px rgba(217, 247, 71, 0.22);
+  background: #cfe63a;
+  box-shadow: 0 0 0 3px rgba(207, 230, 58, 0.20);
 }
 
 body.theme-spaklz .mobile-total-bar {
-  background: rgba(8, 30, 34, 0.96);
-  border: 1px solid rgba(217, 247, 71, 0.22);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.36);
+  background: rgba(10, 24, 61, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
 }
 
 body.theme-spaklz .mobile-total-bar span,
 body.theme-spaklz .mobile-total-bar small {
-  color: rgba(247, 255, 233, 0.72);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 body.theme-spaklz .mobile-total-bar a {
-  background: #d9f747;
-  color: #0e2225;
+  background: #fffef7;
+  color: #0f2f7a;
 }
 
 @media (max-width: 720px) {
@@ -1450,21 +1450,21 @@ body.theme-spaklz .mobile-total-bar a {
     right: -18px;
     bottom: -7px;
     font-size: 78px;
-    opacity: 0.9;
+    opacity: 1;
   }
 
   body.theme-spaklz .products-head,
   body.theme-spaklz tr.product-row {
-    background: rgba(246, 255, 241, 0.96);
-    border-color: rgba(217, 247, 71, 0.25);
+    background: rgba(255, 255, 255, 0.98);
+    border-color: rgba(14, 44, 124, 0.14);
   }
 
   body.theme-spaklz .mobile-tip {
-    color: rgba(247, 255, 233, 0.78);
+    color: #5f6886;
   }
 
   body.theme-spaklz td.product-name-cell {
-    background: linear-gradient(180deg, rgba(217, 247, 71, 0.20) 0%, rgba(246, 255, 241, 0.98) 100%);
+    background: linear-gradient(180deg, rgba(207, 230, 58, 0.16) 0%, rgba(255, 255, 255, 0.98) 100%);
   }
 
   body.theme-spaklz td[data-label="款式"],
@@ -1472,7 +1472,7 @@ body.theme-spaklz .mobile-total-bar a {
   body.theme-spaklz td.qty-cell,
   body.theme-spaklz td.line-total,
   body.theme-spaklz td.note {
-    background: rgba(251, 255, 247, 0.94) !important;
+    background: rgba(255, 255, 255, 0.96) !important;
   }
 
   body.theme-spaklz td.product-name-cell::after,
@@ -1482,7 +1482,7 @@ body.theme-spaklz .mobile-total-bar a {
   body.theme-spaklz td.line-total::after {
     background-image: repeating-linear-gradient(
       90deg,
-      rgba(18, 111, 98, 0.22) 0 7px,
+      rgba(15, 47, 122, 0.18) 0 7px,
       transparent 7px 15px
     );
   }
