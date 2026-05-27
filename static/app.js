@@ -268,12 +268,53 @@ function renderSummary(result) {
   }
 
   const rewardList = $("#rewardList");
-  if (!result.rewards || result.rewards.length === 0) {
-    rewardList.innerHTML = "<li>此場次沒有設定滿額贈估算。</li>";
+  const rewardBadge = $("#rewardSummaryBadge");
+  const rewardHint = $("#rewardHint");
+  const rewards = result.rewards || [];
+
+  if (rewards.length === 0) {
+    if (rewardBadge) {
+      rewardBadge.textContent = "無設定";
+      rewardBadge.className = "reward-summary-badge empty";
+    }
+    if (rewardHint) rewardHint.textContent = "此場次目前沒有設定滿額贈估算。";
+    rewardList.innerHTML = `<li class="reward-item empty">此場次沒有設定滿額贈估算。</li>`;
   } else {
-    rewardList.innerHTML = result.rewards.map(r => (
-      `<li><b>${escapeHtml(r.label)}</b>：${r.count === null ? "需手動確認" : `${r.count} 份`}<br><span class="hint">${escapeHtml(r.note || "")}</span></li>`
-    )).join("");
+    const totalRewards = rewards.reduce((sum, r) => {
+      const count = Number(r.count || 0);
+      return sum + (Number.isFinite(count) && count > 0 ? count : 0);
+    }, 0);
+
+    if (rewardBadge) {
+      rewardBadge.textContent = totalRewards > 0 ? `目前可領 ${totalRewards} 份` : "尚未達成";
+      rewardBadge.className = `reward-summary-badge ${totalRewards > 0 ? "achieved" : "not-achieved"}`;
+    }
+    if (rewardHint) rewardHint.textContent = "依目前商品原幣總額估算，實際贈品規則仍以現場公告為準。";
+
+    rewardList.innerHTML = rewards.map(r => {
+      const manual = r.count === null || r.count === undefined;
+      const count = manual ? null : Number(r.count || 0);
+      const achieved = manual || count > 0;
+      const statusText = manual ? "請確認" : achieved ? "已達成" : "未達成";
+      const countMain = manual ? "?" : fmtNumber(count);
+      const countUnit = manual ? "確認" : "份";
+
+      return `
+        <li class="reward-item ${manual ? "manual" : achieved ? "achieved" : "not-achieved"}">
+          <div class="reward-count-badge" aria-label="${escapeHtml(statusText)}，${escapeHtml(countMain)} ${escapeHtml(countUnit)}">
+            <strong>${escapeHtml(countMain)}</strong>
+            <span>${escapeHtml(countUnit)}</span>
+          </div>
+          <div class="reward-content">
+            <div class="reward-label">
+              <span class="reward-status">${escapeHtml(statusText)}</span>
+              <b>${escapeHtml(r.label)}</b>
+            </div>
+            <div class="reward-note">${escapeHtml(r.note || "")}</div>
+          </div>
+        </li>
+      `;
+    }).join("");
   }
 
   const cart = $("#cartList");
