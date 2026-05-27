@@ -295,23 +295,19 @@ function renderSummary(result) {
       const manual = r.count === null || r.count === undefined;
       const count = manual ? null : Number(r.count || 0);
       const achieved = manual || count > 0;
+      const countText = manual ? "需手動確認" : `${fmtNumber(count)} 份`;
       const statusText = manual ? "請確認" : achieved ? "已達成" : "未達成";
-      const countMain = manual ? "?" : fmtNumber(count);
-      const countUnit = manual ? "確認" : "份";
 
       return `
         <li class="reward-item ${manual ? "manual" : achieved ? "achieved" : "not-achieved"}">
-          <div class="reward-count-badge" aria-label="${escapeHtml(statusText)}，${escapeHtml(countMain)} ${escapeHtml(countUnit)}">
-            <strong>${escapeHtml(countMain)}</strong>
-            <span>${escapeHtml(countUnit)}</span>
+          <div class="reward-line-main">
+            <span class="reward-dot" aria-hidden="true"></span>
+            <b>${escapeHtml(r.label)}</b>
+            <span class="reward-separator">：</span>
+            <strong class="reward-count-text">${escapeHtml(countText)}</strong>
+            <span class="reward-status">${escapeHtml(statusText)}</span>
           </div>
-          <div class="reward-content">
-            <div class="reward-label">
-              <span class="reward-status">${escapeHtml(statusText)}</span>
-              <b>${escapeHtml(r.label)}</b>
-            </div>
-            <div class="reward-note">${escapeHtml(r.note || "")}</div>
-          </div>
+          <div class="reward-note">${escapeHtml(r.note || "")}</div>
         </li>
       `;
     }).join("");
