@@ -606,7 +606,7 @@
         "price": 150,
         "default_qty": 0,
         "note": "卡面共有14種 隨機3張\n限購2包",
-        "limit": 1,
+        "limit": 2,
         "source_row": 17,
         "source_block": 1,
         "category": "隨機卡包",
