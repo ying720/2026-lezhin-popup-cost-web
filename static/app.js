@@ -124,7 +124,7 @@ function renderProducts() {
       <tr class="product-row" data-id="${escapeHtml(p.id)}" data-price="${Number(p.price || 0)}" data-currency="${escapeHtml(currency || p.currency)}" data-limit="${productLimit(p) ?? ""}">
         <td data-label="品項" class="product-name-cell">
           <strong>${escapeHtml(p.item)}</strong>
-          ${p.limit ? `<div class="limit-badge">參考限購：${escapeHtml(p.limit)}</div>` : ""}
+          ${p.limit ? `<div class="limit-badge">限購 ${escapeHtml(p.limit)} 件</div>` : ""}
         </td>
         <td data-label="款式">${escapeHtml(p.variant || "—")}</td>
         <td data-label="單價" class="price">${escapeHtml(currency || p.currency)} ${fmtNumber(p.price)}</td>
@@ -137,7 +137,7 @@ function renderProducts() {
           ${productLimit(p) !== null ? `<div class="limit-message" data-limit-message>${qty >= productLimit(p) ? "已達限購上限" : `最多可選 ${productLimit(p)} 件`}</div>` : ""}
         </td>
         <td data-label="小計" class="line-total">${escapeHtml(currency || p.currency)} ${fmtNumber(line)}</td>
-        <td data-label="官方備註" class="note">${escapeHtml(p.note || "")}</td>
+        <td data-label="說明" class="note">${escapeHtml(p.note || "")}</td>
       </tr>
     `);
   }

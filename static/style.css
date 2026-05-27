@@ -1068,3 +1068,50 @@ td.note {
     height: 42px;
   }
 }
+
+/* Cleaner centered note/limit display */
+td.note {
+  text-align: center;
+}
+
+.product-name-cell .limit-badge {
+  vertical-align: middle;
+}
+
+@media (max-width: 720px) {
+  td.product-name-cell {
+    text-align: center !important;
+  }
+
+  td.product-name-cell strong {
+    text-align: center;
+  }
+
+  .limit-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  td.note {
+    display: block !important;
+    padding: 13px 18px 16px !important;
+    background: #fffdf9;
+    color: var(--muted);
+    text-align: center !important;
+    font-size: 13.5px;
+    line-height: 1.65;
+    white-space: pre-line;
+  }
+
+  td.note::before {
+    content: "" !important;
+    display: none !important;
+  }
+
+  td.note:empty {
+    display: none !important;
+  }
+}

@@ -83,8 +83,17 @@
       <div class="budget-line" id="budgetLine">尚未設定預算。</div>
       <div class="cash-line" id="cashSuggestion">建議至少準備：NT$0</div>
 
-      <h3>滿額贈估算</h3>
-      <ul id="rewardList" class="reward-list"></ul>
+      <section class="reward-panel" aria-labelledby="rewardTitle">
+        <div class="reward-header">
+          <div>
+            <p class="reward-eyebrow">滿額禮提醒</p>
+            <h3 id="rewardTitle">🎁 滿額贈估算</h3>
+          </div>
+          <span id="rewardSummaryBadge" class="reward-summary-badge">計算中</span>
+        </div>
+        <p id="rewardHint" class="reward-hint">選擇商品後會依目前商品金額估算可領數量。</p>
+        <ul id="rewardList" class="reward-list"></ul>
+      </section>
 
       <h3>已選商品</h3>
       <div id="cartList" class="cart-list empty">目前尚未選擇商品。</div>
@@ -118,7 +127,7 @@
               <th>單價</th>
               <th>數量</th>
               <th>小計</th>
-              <th>官方備註</th>
+              <th>說明</th>
             </tr>
           </thead>
           <tbody id="productsBody"></tbody>
