@@ -1613,3 +1613,10 @@ body.theme-spaklz .category-meta span {
     background: linear-gradient(135deg, #0a2665 0%, #103f98 100%);
   }
 }
+
+
+/* SPAKLZ: show variant inside product card name, keep selected list using original item | variant */
+body.theme-spaklz th:nth-child(2),
+body.theme-spaklz td[data-label="款式"] {
+  display: none !important;
+}
