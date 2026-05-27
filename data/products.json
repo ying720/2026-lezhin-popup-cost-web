@@ -585,7 +585,7 @@
         "id": "p0039",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "隨機卡包 - B.F (攻) 壓克力立牌",
+        "item": "隨機卡包 - B.F (攻)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -593,15 +593,15 @@
         "limit": 2,
         "source_row": 16,
         "source_block": 1,
-        "category": "壓克力立牌",
-        "cart_item": "壓克力立牌",
-        "cart_variant": "隨機卡包 - B.F (攻)"
+        "category": "隨機卡包",
+        "cart_item": "隨機卡包",
+        "cart_variant": "B.F (攻)"
       },
       {
         "id": "p0040",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "隨機卡包 - MEMBER (受) 壓克力立牌",
+        "item": "隨機卡包 - MEMBER (受)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -609,15 +609,15 @@
         "limit": 1,
         "source_row": 17,
         "source_block": 1,
-        "category": "壓克力立牌",
-        "cart_item": "壓克力立牌",
-        "cart_variant": "隨機卡包 - MEMBER (受)"
+        "category": "隨機卡包",
+        "cart_item": "隨機卡包",
+        "cart_variant": "MEMBER (受)"
       },
       {
         "id": "p0041",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "AR STAR 徽章 - A (攻) 壓克力立牌",
+        "item": "AR STAR 徽章 - A (攻)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -625,15 +625,15 @@
         "limit": 1,
         "source_row": 18,
         "source_block": 1,
-        "category": "壓克力立牌",
-        "cart_item": "壓克力立牌",
-        "cart_variant": "AR STAR 徽章 - A (攻)"
+        "category": "AR STAR 徽章",
+        "cart_item": "AR STAR 徽章",
+        "cart_variant": "A (攻)"
       },
       {
         "id": "p0042",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "AR STAR 徽章 - B (受) 壓克力立牌",
+        "item": "AR STAR 徽章 - B (受)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -641,15 +641,15 @@
         "limit": 1,
         "source_row": 19,
         "source_block": 1,
-        "category": "壓克力立牌",
-        "cart_item": "壓克力立牌",
-        "cart_variant": "AR STAR 徽章 - B (受)"
+        "category": "AR STAR 徽章",
+        "cart_item": "AR STAR 徽章",
+        "cart_variant": "B (受)"
       },
       {
         "id": "p0043",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "光柵票卡 - B.F (攻) 壓克力立牌",
+        "item": "光柵票卡 - B.F (攻)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -657,15 +657,15 @@
         "limit": 1,
         "source_row": 20,
         "source_block": 1,
-        "category": "壓克力立牌",
-        "cart_item": "壓克力立牌",
-        "cart_variant": "光柵票卡 - B.F (攻)"
+        "category": "光柵票卡",
+        "cart_item": "光柵票卡",
+        "cart_variant": "B.F (攻)"
       },
       {
         "id": "p0044",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "光柵票卡 - MEMBER (受) 壓克力立牌",
+        "item": "光柵票卡 - MEMBER (受)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -673,9 +673,9 @@
         "limit": 1,
         "source_row": 21,
         "source_block": 1,
-        "category": "壓克力立牌",
-        "cart_item": "壓克力立牌",
-        "cart_variant": "光柵票卡 - MEMBER (受)"
+        "category": "光柵票卡",
+        "cart_item": "光柵票卡",
+        "cart_variant": "MEMBER (受)"
       },
       {
         "id": "p0045",
@@ -1151,15 +1151,15 @@
         "limit": 1,
         "source_row": 50,
         "source_block": 1,
-        "category": "LEZHIN STAGE立磚",
-        "cart_item": "LEZHIN STAGE立磚",
-        "cart_variant": "T-Shirt (含14款小卡)"
+        "category": "T-Shirt",
+        "cart_item": "T-Shirt",
+        "cart_variant": ""
       },
       {
         "id": "p0074",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "隨機舞台卡 - B.F (攻) LEZHIN STAGE立磚",
+        "item": "隨機舞台卡 - B.F (攻)",
         "variant": "",
         "price": 160,
         "default_qty": 0,
@@ -1167,15 +1167,15 @@
         "limit": 1,
         "source_row": 51,
         "source_block": 1,
-        "category": "LEZHIN STAGE立磚",
-        "cart_item": "LEZHIN STAGE立磚",
-        "cart_variant": "隨機舞台卡 - B.F (攻)"
+        "category": "隨機舞台卡",
+        "cart_item": "隨機舞台卡",
+        "cart_variant": "B.F (攻)"
       },
       {
         "id": "p0075",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "隨機舞台卡 - MEMBER (受) LEZHIN STAGE立磚",
+        "item": "隨機舞台卡 - MEMBER (受)",
         "variant": "",
         "price": 160,
         "default_qty": 0,
@@ -1183,15 +1183,15 @@
         "limit": 1,
         "source_row": 52,
         "source_block": 1,
-        "category": "LEZHIN STAGE立磚",
-        "cart_item": "LEZHIN STAGE立磚",
-        "cart_variant": "隨機舞台卡 - MEMBER (受)"
+        "category": "隨機舞台卡",
+        "cart_item": "隨機舞台卡",
+        "cart_variant": "MEMBER (受)"
       },
       {
         "id": "p0076",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "拍立得 (含1張小卡) LEZHIN STAGE立磚",
+        "item": "拍立得 (含1張小卡)",
         "variant": "",
         "price": 150,
         "default_qty": 0,
@@ -1199,9 +1199,9 @@
         "limit": 2,
         "source_row": 53,
         "source_block": 1,
-        "category": "LEZHIN STAGE立磚",
-        "cart_item": "LEZHIN STAGE立磚",
-        "cart_variant": "拍立得 (含1張小卡)"
+        "category": "拍立得",
+        "cart_item": "拍立得",
+        "cart_variant": ""
       },
       {
         "id": "p0077",
@@ -1943,7 +1943,7 @@
         "id": "p0123",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "迷你舞台立牌 Q版立牌",
+        "item": "迷你舞台立牌",
         "variant": "",
         "price": 160,
         "default_qty": 0,
@@ -1951,9 +1951,9 @@
         "limit": 2,
         "source_row": 6,
         "source_block": 3,
-        "category": "Q版立牌",
-        "cart_item": "Q版立牌",
-        "cart_variant": "迷你舞台立牌"
+        "category": "迷你舞台立牌",
+        "cart_item": "迷你舞台立牌",
+        "cart_variant": ""
       },
       {
         "id": "p0124",
@@ -2228,7 +2228,7 @@
         "id": "p0139",
         "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
-        "item": "應援棒吊飾 (含2張貼紙) 絨毛娃娃",
+        "item": "應援棒吊飾 (含2張貼紙)",
         "variant": "",
         "price": 420,
         "default_qty": 0,
@@ -2236,9 +2236,9 @@
         "limit": 1,
         "source_row": 22,
         "source_block": 3,
-        "category": "絨毛娃娃",
-        "cart_item": "絨毛娃娃",
-        "cart_variant": "應援棒吊飾 (含2張貼紙)",
+        "category": "應援棒吊飾",
+        "cart_item": "應援棒吊飾",
+        "cart_variant": "",
         "category_count": 28
       },
       {
@@ -2847,9 +2847,9 @@
         "limit": 20,
         "source_row": 16,
         "source_block": 1,
-        "cart_item": "個人立牌",
-        "cart_variant": "隨機卡包 - A (攻)",
-        "category": "個人立牌"
+        "cart_item": "隨機卡包",
+        "cart_variant": "A (攻)",
+        "category": "隨機卡包"
       },
       {
         "id": "p0178",
@@ -2863,9 +2863,9 @@
         "limit": 10,
         "source_row": 17,
         "source_block": 1,
-        "cart_item": "個人立牌",
-        "cart_variant": "隨機卡包 - B (受)",
-        "category": "個人立牌"
+        "cart_item": "隨機卡包",
+        "cart_variant": "B (受)",
+        "category": "隨機卡包"
       },
       {
         "id": "p0179",
@@ -2879,9 +2879,9 @@
         "limit": 20,
         "source_row": 18,
         "source_block": 1,
-        "cart_item": "個人立牌",
-        "cart_variant": "AR STAR 徽章 - A (攻)",
-        "category": "個人立牌"
+        "cart_item": "AR STAR 徽章",
+        "cart_variant": "A (攻)",
+        "category": "AR STAR 徽章"
       },
       {
         "id": "p0180",
@@ -2895,9 +2895,9 @@
         "limit": 10,
         "source_row": 19,
         "source_block": 1,
-        "cart_item": "個人立牌",
-        "cart_variant": "AR STAR 徽章 - B (受)",
-        "category": "個人立牌"
+        "cart_item": "AR STAR 徽章",
+        "cart_variant": "B (受)",
+        "category": "AR STAR 徽章"
       },
       {
         "id": "p0181",
@@ -2911,9 +2911,9 @@
         "limit": 20,
         "source_row": 20,
         "source_block": 1,
-        "cart_item": "個人立牌",
-        "cart_variant": "3D變化票卡 - A (攻)",
-        "category": "個人立牌"
+        "cart_item": "3D變化票卡",
+        "cart_variant": "A (攻)",
+        "category": "3D變化票卡"
       },
       {
         "id": "p0182",
@@ -2927,9 +2927,9 @@
         "limit": 10,
         "source_row": 21,
         "source_block": 1,
-        "cart_item": "個人立牌",
-        "cart_variant": "3D變化票卡 - B (受)",
-        "category": "個人立牌"
+        "cart_item": "3D變化票卡",
+        "cart_variant": "B (受)",
+        "category": "3D變化票卡"
       },
       {
         "id": "p0183",
@@ -3614,7 +3614,10 @@
         "note": "限5",
         "limit": 5,
         "source_row": 2,
-        "source_block": 2
+        "source_block": 2,
+        "category": "T-Shirt",
+        "cart_item": "T-Shirt",
+        "cart_variant": ""
       },
       {
         "id": "p0226",
@@ -3627,7 +3630,10 @@
         "note": "各14款\n各限20",
         "limit": 20,
         "source_row": 3,
-        "source_block": 2
+        "source_block": 2,
+        "category": "直拍明信片",
+        "cart_item": "直拍明信片",
+        "cart_variant": "A (攻)"
       },
       {
         "id": "p0227",
@@ -3640,7 +3646,10 @@
         "note": "限5",
         "limit": 5,
         "source_row": 4,
-        "source_block": 2
+        "source_block": 2,
+        "category": "直拍明信片",
+        "cart_item": "直拍明信片",
+        "cart_variant": "B (受)"
       },
       {
         "id": "p0228",
@@ -3653,7 +3662,10 @@
         "note": "共14款/各限20",
         "limit": 20,
         "source_row": 5,
-        "source_block": 2
+        "source_block": 2,
+        "category": "拍立得",
+        "cart_item": "拍立得",
+        "cart_variant": ""
       },
       {
         "id": "p0229",
@@ -4331,7 +4343,7 @@
         "id": "p0271",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "Q版吊飾 - A (攻) 手幅",
+        "item": "Q版吊飾 - A (攻)",
         "variant": "",
         "price": 7500,
         "default_qty": 0,
@@ -4339,15 +4351,15 @@
         "limit": 20,
         "source_row": 48,
         "source_block": 2,
-        "category": "手幅",
-        "cart_item": "手幅",
-        "cart_variant": "Q版吊飾 - A (攻)"
+        "category": "Q版吊飾",
+        "cart_item": "Q版吊飾",
+        "cart_variant": "A (攻)"
       },
       {
         "id": "p0272",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "Q版吊飾 - B (受) 手幅",
+        "item": "Q版吊飾 - B (受)",
         "variant": "",
         "price": 7500,
         "default_qty": 0,
@@ -4355,15 +4367,15 @@
         "limit": 5,
         "source_row": 49,
         "source_block": 2,
-        "category": "手幅",
-        "cart_item": "手幅",
-        "cart_variant": "Q版吊飾 - B (受)"
+        "category": "Q版吊飾",
+        "cart_item": "Q版吊飾",
+        "cart_variant": "B (受)"
       },
       {
         "id": "p0273",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "Q版立牌 - A (攻) 手幅",
+        "item": "Q版立牌 - A (攻)",
         "variant": "",
         "price": 4200,
         "default_qty": 0,
@@ -4371,15 +4383,15 @@
         "limit": 20,
         "source_row": 50,
         "source_block": 2,
-        "category": "手幅",
-        "cart_item": "手幅",
-        "cart_variant": "Q版立牌 - A (攻)"
+        "category": "Q版立牌",
+        "cart_item": "Q版立牌",
+        "cart_variant": "A (攻)"
       },
       {
         "id": "p0274",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "Q版立牌 - B (受) 手幅",
+        "item": "Q版立牌 - B (受)",
         "variant": "",
         "price": 4200,
         "default_qty": 0,
@@ -4387,15 +4399,15 @@
         "limit": 5,
         "source_row": 51,
         "source_block": 2,
-        "category": "手幅",
-        "cart_item": "手幅",
-        "cart_variant": "Q版立牌 - B (受)"
+        "category": "Q版立牌",
+        "cart_item": "Q版立牌",
+        "cart_variant": "B (受)"
       },
       {
         "id": "p0275",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "迷你舞台立牌 手幅",
+        "item": "迷你舞台立牌",
         "variant": "",
         "price": 5500,
         "default_qty": 0,
@@ -4403,9 +4415,9 @@
         "limit": 10,
         "source_row": 52,
         "source_block": 2,
-        "category": "手幅",
-        "cart_item": "手幅",
-        "cart_variant": "迷你舞台立牌"
+        "category": "迷你舞台立牌",
+        "cart_item": "迷你舞台立牌",
+        "cart_variant": ""
       },
       {
         "id": "p0276",
@@ -4666,7 +4678,7 @@
         "id": "p0291",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "應援棒吊飾 (含2張貼紙) 絨毛娃娃",
+        "item": "應援棒吊飾 (含2張貼紙)",
         "variant": "",
         "price": 14000,
         "default_qty": 0,
@@ -4674,9 +4686,9 @@
         "limit": 10,
         "source_row": 17,
         "source_block": 3,
-        "cart_item": "棉花娃",
-        "cart_variant": "應援棒吊飾 (含2張貼紙)",
-        "category": "絨毛娃娃",
+        "cart_item": "應援棒吊飾",
+        "cart_variant": "",
+        "category": "應援棒吊飾",
         "category_count": 28
       },
       {
@@ -4770,7 +4782,10 @@
         "note": "線下快閃 - A3\n線上販售 - A4",
         "limit": null,
         "source_row": 23,
-        "source_block": 3
+        "source_block": 3,
+        "category": "A3海報",
+        "cart_item": "A3海報",
+        "cart_variant": "A (攻)"
       },
       {
         "id": "p0298",
@@ -4783,13 +4798,16 @@
         "note": "線下快閃 - A3\n線上販售 - A4",
         "limit": null,
         "source_row": 24,
-        "source_block": 3
+        "source_block": 3,
+        "category": "A3海報",
+        "cart_item": "A3海報",
+        "cart_variant": "B (受)"
       },
       {
         "id": "p0299",
         "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
-        "item": "年曆 ❗",
+        "item": "年曆",
         "variant": "",
         "price": 60000,
         "default_qty": 0,
@@ -4797,9 +4815,9 @@
         "limit": 5,
         "source_row": 25,
         "source_block": 3,
-        "cart_item": "❗",
-        "cart_variant": "年曆",
-        "category": "❗"
+        "cart_item": "年曆",
+        "cart_variant": "",
+        "category": "年曆"
       },
       {
         "id": "p0300",
