@@ -145,7 +145,7 @@ function renderProductRow(p, qty, currency) {
   `;
 }
 
-function renderCategoryRow(category, groupRows) {
+function categorySummary(groupRows) {
   const selectedQty = groupRows.reduce((sum, row) => sum + Number(row.qty || 0), 0);
   const selectedKinds = groupRows.filter(row => Number(row.qty || 0) > 0).length;
   const selectedText = selectedQty > 0 ? `已選 ${fmtNumber(selectedQty)} 件` : "尚未選擇";
@@ -154,19 +154,57 @@ function renderCategoryRow(category, groupRows) {
     ...groupRows.map(row => Number(row.product?.category_count || 0)).filter(Number.isFinite)
   );
   const displayCount = countOverride > 0 ? countOverride : groupRows.length;
+  return { selectedQty, selectedKinds, selectedText, displayCount };
+}
+
+function renderCategoryRow(category, groupRows) {
+  const summary = categorySummary(groupRows);
 
   return `
-    <tr class="product-category-row">
+    <tr class="product-category-row" data-category="${escapeHtml(category)}">
       <td colspan="6">
         <div class="category-title">${escapeHtml(category)}</div>
         <div class="category-meta">
-          <span>共 ${fmtNumber(displayCount)} 款</span>
-          <span>${escapeHtml(selectedText)}</span>
-          ${selectedKinds > 0 ? `<span>${fmtNumber(selectedKinds)} 款有選</span>` : ""}
+          <span data-category-count>共 ${fmtNumber(summary.displayCount)} 款</span>
+          <span data-category-selected>${escapeHtml(summary.selectedText)}</span>
+          <span data-category-kinds ${summary.selectedKinds > 0 ? "" : "hidden"}>${fmtNumber(summary.selectedKinds)} 款有選</span>
         </div>
       </td>
     </tr>
   `;
+}
+
+function updateCategorySummaries() {
+  if (!isSpaklzEvent()) return;
+
+  const q = $("#searchInput").value.trim().toLowerCase();
+  const selectedOnly = $("#selectedOnly").checked;
+  const rows = visibleProductRows(eventProducts(), q, selectedOnly);
+  const groups = new Map();
+
+  for (const row of rows) {
+    const category = productCategory(row.product);
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(row);
+  }
+
+  $$(".product-category-row").forEach(categoryRow => {
+    const category = categoryRow.dataset.category;
+    const groupRows = groups.get(category) || [];
+    const summary = categorySummary(groupRows);
+
+    const countEl = categoryRow.querySelector("[data-category-count]");
+    const selectedEl = categoryRow.querySelector("[data-category-selected]");
+    const kindsEl = categoryRow.querySelector("[data-category-kinds]");
+
+    if (countEl) countEl.textContent = `共 ${fmtNumber(summary.displayCount)} 款`;
+    if (selectedEl) selectedEl.textContent = summary.selectedText;
+
+    if (kindsEl) {
+      kindsEl.textContent = `${fmtNumber(summary.selectedKinds)} 款有選`;
+      kindsEl.hidden = summary.selectedKinds <= 0;
+    }
+  });
 }
 
 function renderProducts() {
@@ -265,6 +303,7 @@ function setProductQty(tr, product, qty) {
 
   updateLineTotal(tr, qty);
   updateLimitState(tr, product, qty);
+  updateCategorySummaries();
 }
 
 function updateLimitState(tr, product, qty) {
