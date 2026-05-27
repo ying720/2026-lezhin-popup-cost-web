@@ -9,7 +9,7 @@
 <body>
   <header class="hero">
     <div>
-      <p class="eyebrow">POP-UP COST PLANNER</p>
+      <p class="eyebrow">Excel 商品清單轉換</p>
       <h1>Lezhin 線下快閃花費計算器</h1>
       <p class="sub">選商品數量、輸入交通餐飲等額外費用，後端會幫你計算商品總額、台幣換算、預備金與滿額贈估算。</p>
     </div>
@@ -38,7 +38,7 @@
         </label>
       </div>
 
-      <details open>
+      <details>
         <summary>額外費用</summary>
         <div class="expense-grid">
           <label>交通費 <input data-extra="transport" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
@@ -55,7 +55,6 @@
 
       <div class="actions">
         <button id="resetBtn" class="secondary">清空數量</button>
-        <button id="defaultBtn" class="secondary">載入 Excel 原數量</button>
       </div>
     </section>
 
@@ -137,24 +136,25 @@
   </main>
 
   <div class="mobile-total-bar" aria-live="polite">
-    <div>
+    <div class="mobile-total-main">
       <span>預估總花費</span>
       <strong id="mobileGrandTotal">NT$0</strong>
       <small id="mobileSelectedCount">已選 0 項</small>
     </div>
-    <a href="#summaryPanel">明細</a>
+    <div class="mobile-total-actions">
+      <button id="mobileResetBtn" type="button" class="mobile-clear-btn">清空</button>
+      <a href="#summaryPanel">明細</a>
+    </div>
   </div>
 
-<script id="catalog-data" type="application/json">
-  {{ catalog | tojson }}
-</script>
-
-<script>
-  window.__CATALOG__ = JSON.parse(
-    document.getElementById("catalog-data").textContent
-  );
-</script>
-
+  <script id="catalog-data" type="application/json">
+    {{ catalog | tojson }}
+  </script>
+  <script>
+    window.__CATALOG__ = JSON.parse(
+      document.getElementById("catalog-data").textContent
+    );
+  </script>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
