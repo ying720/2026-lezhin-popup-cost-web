@@ -584,3 +584,21 @@ td.note {
   .layout { display: block; padding: 0; }
   .panel { box-shadow: none; border: 0; }
 }
+
+.qty-control button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.limit-message {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.limit-reached .limit-message {
+  color: var(--danger);
+}

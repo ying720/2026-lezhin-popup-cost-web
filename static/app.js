@@ -24,6 +24,22 @@ function eventMeta() {
   return catalog.events.find(e => e.name === currentEvent) || {};
 }
 
+function findProduct(id) {
+  return eventProducts().find(p => p.id === id) || null;
+}
+
+function productLimit(product) {
+  const limit = Number(product?.limit || 0);
+  return Number.isFinite(limit) && limit > 0 ? Math.floor(limit) : null;
+}
+
+function normalizeQty(value, product) {
+  const limit = productLimit(product);
+  let qty = Math.max(0, Math.floor(Number(value || 0)));
+  if (limit !== null) qty = Math.min(qty, limit);
+  return qty;
+}
+
 function storageKey() {
   return `lezhin-popup-calc:${currentEvent}`;
 }
@@ -90,13 +106,14 @@ function renderProducts() {
 
   const rows = [];
   for (const p of products) {
-    const qty = Number(quantities[p.id] || 0);
+    const qty = normalizeQty(quantities[p.id] || 0, p);
+    quantities[p.id] = qty;
     if (!productMatchesSearch(p, q)) continue;
     if (selectedOnly && qty <= 0) continue;
 
     const line = Number(p.price) * qty;
     rows.push(`
-      <tr class="product-row" data-id="${escapeHtml(p.id)}" data-price="${Number(p.price || 0)}" data-currency="${escapeHtml(currency || p.currency)}">
+      <tr class="product-row" data-id="${escapeHtml(p.id)}" data-price="${Number(p.price || 0)}" data-currency="${escapeHtml(currency || p.currency)}" data-limit="${productLimit(p) ?? ""}">
         <td data-label="品項" class="product-name-cell">
           <strong>${escapeHtml(p.item)}</strong>
           ${p.limit ? `<div class="limit-badge">參考限購：${escapeHtml(p.limit)}</div>` : ""}
@@ -106,9 +123,10 @@ function renderProducts() {
         <td data-label="數量" class="qty-cell">
           <div class="qty-control">
             <button type="button" data-action="minus" aria-label="減少">−</button>
-            <input type="number" inputmode="numeric" min="0" step="1" value="${qty}" data-qty aria-label="${escapeHtml(p.item)} 數量">
-            <button type="button" data-action="plus" aria-label="增加">＋</button>
+            <input type="number" inputmode="numeric" min="0" ${productLimit(p) !== null ? `max="${productLimit(p)}"` : ""} step="1" value="${qty}" data-qty aria-label="${escapeHtml(p.item)} 數量">
+            <button type="button" data-action="plus" aria-label="增加" ${productLimit(p) !== null && qty >= productLimit(p) ? "disabled" : ""}>＋</button>
           </div>
+          ${productLimit(p) !== null ? `<div class="limit-message" data-limit-message>${qty >= productLimit(p) ? "已達限購上限" : `最多可選 ${productLimit(p)} 件`}</div>` : ""}
         </td>
         <td data-label="小計" class="line-total">${escapeHtml(currency || p.currency)} ${fmtNumber(line)}</td>
         <td data-label="官方備註" class="note">${escapeHtml(p.note || "")}</td>
@@ -125,12 +143,11 @@ function bindProductControls(tbody) {
     btn.addEventListener("click", () => {
       const tr = btn.closest("tr");
       const id = tr.dataset.id;
+      const product = findProduct(id);
       const input = tr.querySelector("[data-qty]");
       const delta = btn.dataset.action === "plus" ? 1 : -1;
-      const next = Math.max(0, Number(input.value || 0) + delta);
-      quantities[id] = next;
-      input.value = next;
-      updateLineTotal(tr, next);
+      const next = normalizeQty(Number(input.value || 0) + delta, product);
+      setProductQty(tr, product, next);
       saveQuantities();
 
       if ($("#selectedOnly").checked && next === 0) renderProducts();
@@ -142,20 +159,52 @@ function bindProductControls(tbody) {
     input.addEventListener("input", () => {
       const tr = input.closest("tr");
       const id = tr.dataset.id;
-      const next = Math.max(0, Math.floor(Number(input.value || 0)));
-      quantities[id] = next;
-      updateLineTotal(tr, next);
+      const product = findProduct(id);
+      const next = normalizeQty(input.value, product);
+      setProductQty(tr, product, next);
       saveQuantities();
       calculateDebounced();
     });
 
     input.addEventListener("change", () => {
-      const next = Math.max(0, Math.floor(Number(input.value || 0)));
-      input.value = next;
+      const tr = input.closest("tr");
+      const product = findProduct(tr.dataset.id);
+      const next = normalizeQty(input.value, product);
+      setProductQty(tr, product, next);
       if ($("#selectedOnly").checked && next === 0) renderProducts();
       calculate();
     });
   });
+}
+
+function setProductQty(tr, product, qty) {
+  const id = tr.dataset.id;
+  quantities[id] = qty;
+
+  const input = tr.querySelector("[data-qty]");
+  if (input) input.value = qty;
+
+  updateLineTotal(tr, qty);
+  updateLimitState(tr, product, qty);
+}
+
+function updateLimitState(tr, product, qty) {
+  const limit = productLimit(product);
+  const plusBtn = tr.querySelector('button[data-action="plus"]');
+  const message = tr.querySelector("[data-limit-message]");
+
+  if (limit === null) {
+    if (plusBtn) plusBtn.disabled = false;
+    if (message) message.textContent = "";
+    return;
+  }
+
+  const reached = qty >= limit;
+  if (plusBtn) plusBtn.disabled = reached;
+  tr.classList.toggle("limit-reached", reached);
+  if (message) {
+    message.textContent = reached ? "已達限購上限" : `最多可選 ${limit} 件`;
+  }
 }
 
 function updateLineTotal(tr, qty) {

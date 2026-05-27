@@ -93,17 +93,19 @@ def calculate_summary(catalog: Dict[str, Any], payload: Dict[str, Any]) -> Dict[
 
     for p in products:
         pid = p.get("id")
-        qty = _to_int(quantities.get(pid, p.get("default_qty", 0)))
+        original_qty = _to_int(quantities.get(pid, p.get("default_qty", 0)))
+        qty = original_qty
         if qty <= 0:
             continue
+
+        limit = p.get("limit")
+        if isinstance(limit, int) and limit > 0 and qty > limit:
+            warnings.append(f"{p.get('item')} {p.get('variant') or ''} 已依官方備註限購調整為 {limit}。")
+            qty = limit
 
         price = _to_number(p.get("price"))
         line_total = price * qty
         subtotal_original += line_total
-
-        limit = p.get("limit")
-        if isinstance(limit, int) and limit > 0 and qty > limit:
-            warnings.append(f"{p.get('item')} {p.get('variant') or ''} 數量 {qty} 可能超過官方備註限購 {limit}。")
 
         selected_items.append({
             "id": pid,
