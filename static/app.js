@@ -24,6 +24,14 @@ function eventMeta() {
   return catalog.events.find(e => e.name === currentEvent) || {};
 }
 
+function isSpaklzEvent(name = currentEvent) {
+  return /SPAKLZ/i.test(String(name || ""));
+}
+
+function applyEventTheme() {
+  document.body.classList.toggle("theme-spaklz", isSpaklzEvent());
+}
+
 function findProduct(id) {
   return eventProducts().find(p => p.id === id) || null;
 }
@@ -80,6 +88,7 @@ function initEvents() {
   select.value = currentEvent;
   select.addEventListener("change", () => {
     currentEvent = select.value;
+    applyEventTheme();
     const meta = eventMeta();
     $("#exchangeRate").value = meta.default_exchange_rate ?? 1;
     loadQuantities(false);
@@ -378,6 +387,7 @@ function bindInputs() {
 
 function init() {
   initEvents();
+  applyEventTheme();
   const meta = eventMeta();
   $("#exchangeRate").value = meta.default_exchange_rate ?? 1;
   loadQuantities(false);

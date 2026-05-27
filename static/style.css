@@ -1273,3 +1273,217 @@ select {
     max-width: calc(100vw - 24px);
   }
 }
+
+
+/* SPAKLZ 2026 WORLD TOUR theme: poster-inspired deep teal + neon lime.
+   The class is applied only when the selected event name contains "SPAKLZ". */
+body.theme-spaklz {
+  --bg: #09292f;
+  --panel: #f6fff1;
+  --ink: #142321;
+  --muted: #596b66;
+  --line: rgba(19, 93, 86, 0.24);
+  --accent: #d9f747;
+  --accent-dark: #126f62;
+  --soft: #e6f5d8;
+  --gold: #d9f747;
+  --gold-soft: #efffd0;
+  --danger: #bd3650;
+  --ok: #0f8a5f;
+  background:
+    radial-gradient(circle at 14% 8%, rgba(217, 247, 71, 0.22), transparent 28%),
+    radial-gradient(circle at 88% 8%, rgba(18, 111, 98, 0.62), transparent 34%),
+    linear-gradient(180deg, #071b24 0%, #0d3b42 38%, #0f5d55 100%);
+}
+
+body.theme-spaklz .hero {
+  position: relative;
+  overflow: hidden;
+  color: #f7ffe9;
+  border-bottom: 1px solid rgba(217, 247, 71, 0.22);
+  background:
+    radial-gradient(circle at 76% 24%, rgba(217, 247, 71, 0.28), transparent 18%),
+    radial-gradient(circle at 20% 10%, rgba(18, 111, 98, 0.65), transparent 42%),
+    linear-gradient(135deg, #111923 0%, #0b3840 46%, #126f62 100%);
+}
+
+body.theme-spaklz .hero::after {
+  content: "SPAKLZ";
+  position: absolute;
+  right: clamp(-18px, 4vw, 40px);
+  bottom: -20px;
+  color: rgba(217, 247, 71, 0.12);
+  font-size: clamp(52px, 14vw, 170px);
+  font-weight: 1000;
+  letter-spacing: -0.08em;
+  pointer-events: none;
+  transform: rotate(-4deg);
+}
+
+body.theme-spaklz .hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+body.theme-spaklz .eyebrow {
+  color: #d9f747;
+}
+
+body.theme-spaklz .sub {
+  color: rgba(247, 255, 233, 0.84);
+}
+
+body.theme-spaklz .panel {
+  background: rgba(246, 255, 241, 0.96);
+  border-color: rgba(217, 247, 71, 0.28);
+  box-shadow: 0 22px 50px rgba(2, 18, 22, 0.24);
+}
+
+body.theme-spaklz input,
+body.theme-spaklz select,
+body.theme-spaklz .card,
+body.theme-spaklz .cart-list,
+body.theme-spaklz .budget-line,
+body.theme-spaklz .cash-line,
+body.theme-spaklz .table-wrap,
+body.theme-spaklz .checkline {
+  background: #fbfff7;
+  border-color: rgba(18, 111, 98, 0.22);
+}
+
+body.theme-spaklz input:focus,
+body.theme-spaklz select:focus {
+  outline-color: rgba(217, 247, 71, 0.42);
+  border-color: #126f62;
+}
+
+body.theme-spaklz button {
+  background: #d9f747;
+  color: #0e2225;
+  box-shadow: 0 10px 22px rgba(217, 247, 71, 0.18);
+}
+
+body.theme-spaklz button:hover {
+  background: #c7ef34;
+}
+
+body.theme-spaklz button.secondary,
+body.theme-spaklz .mobile-clear-btn {
+  background: rgba(217, 247, 71, 0.16);
+  color: #d9f747;
+  border: 1px solid rgba(217, 247, 71, 0.38);
+}
+
+body.theme-spaklz .card.primary {
+  background: linear-gradient(135deg, #0a3038 0%, #126f62 100%);
+  color: #f7ffe9;
+}
+
+body.theme-spaklz .card.primary span {
+  color: rgba(247, 255, 233, 0.76);
+}
+
+body.theme-spaklz summary,
+body.theme-spaklz .event-meta-chip,
+body.theme-spaklz .limit-badge,
+body.theme-spaklz .reward-count-text,
+body.theme-spaklz td.line-total {
+  color: #126f62;
+}
+
+body.theme-spaklz .event-meta-chip,
+body.theme-spaklz .limit-badge {
+  background: rgba(217, 247, 71, 0.24);
+}
+
+body.theme-spaklz th {
+  background: #eaffbd;
+  color: #126f62;
+}
+
+body.theme-spaklz tbody tr:hover {
+  background: #f3ffe7;
+}
+
+body.theme-spaklz .reward-panel {
+  border-color: rgba(217, 247, 71, 0.58);
+  border-left-color: #d9f747;
+  background: linear-gradient(180deg, #f5ffd9 0%, #fbfff2 100%);
+  box-shadow: 0 10px 24px rgba(5, 50, 48, 0.12);
+}
+
+body.theme-spaklz .reward-summary-badge.achieved,
+body.theme-spaklz .reward-item.achieved .reward-status,
+body.theme-spaklz .reward-item.manual .reward-status {
+  background: #126f62;
+  color: #f7ffe9;
+}
+
+body.theme-spaklz .reward-dot {
+  background: #d9f747;
+  box-shadow: 0 0 0 3px rgba(217, 247, 71, 0.22);
+}
+
+body.theme-spaklz .mobile-total-bar {
+  background: rgba(8, 30, 34, 0.96);
+  border: 1px solid rgba(217, 247, 71, 0.22);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.36);
+}
+
+body.theme-spaklz .mobile-total-bar span,
+body.theme-spaklz .mobile-total-bar small {
+  color: rgba(247, 255, 233, 0.72);
+}
+
+body.theme-spaklz .mobile-total-bar a {
+  background: #d9f747;
+  color: #0e2225;
+}
+
+@media (max-width: 720px) {
+  body.theme-spaklz .hero {
+    border-bottom: 0;
+    border-radius: 0 0 26px 26px;
+  }
+
+  body.theme-spaklz .hero::after {
+    right: -18px;
+    bottom: -7px;
+    font-size: 78px;
+    opacity: 0.9;
+  }
+
+  body.theme-spaklz .products-head,
+  body.theme-spaklz tr.product-row {
+    background: rgba(246, 255, 241, 0.96);
+    border-color: rgba(217, 247, 71, 0.25);
+  }
+
+  body.theme-spaklz .mobile-tip {
+    color: rgba(247, 255, 233, 0.78);
+  }
+
+  body.theme-spaklz td.product-name-cell {
+    background: linear-gradient(180deg, rgba(217, 247, 71, 0.20) 0%, rgba(246, 255, 241, 0.98) 100%);
+  }
+
+  body.theme-spaklz td[data-label="款式"],
+  body.theme-spaklz td.price,
+  body.theme-spaklz td.qty-cell,
+  body.theme-spaklz td.line-total,
+  body.theme-spaklz td.note {
+    background: rgba(251, 255, 247, 0.94) !important;
+  }
+
+  body.theme-spaklz td.product-name-cell::after,
+  body.theme-spaklz td[data-label="款式"]::after,
+  body.theme-spaklz td.price::after,
+  body.theme-spaklz td.qty-cell::after,
+  body.theme-spaklz td.line-total::after {
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgba(18, 111, 98, 0.22) 0 7px,
+      transparent 7px 15px
+    );
+  }
+}
