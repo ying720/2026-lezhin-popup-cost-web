@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lezhin 線下快閃花費計算器</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Excel 商品清單轉換</p>
+      <h1>Lezhin 線下快閃花費計算器</h1>
+      <p class="sub">選商品數量、輸入交通餐飲等額外費用，後端會幫你計算商品總額、台幣換算、預備金與滿額贈估算。</p>
+    </div>
+    <button id="printBtn" class="secondary">列印／存成 PDF</button>
+  </header>
+
+  <main class="layout">
+    <section class="panel controls" aria-labelledby="settingsTitle">
+      <h2 id="settingsTitle">1. 場次與費用設定</h2>
+
+      <label>
+        場次
+        <select id="eventSelect"></select>
+      </label>
+
+      <div class="grid-two">
+        <label>
+          匯率
+          <input id="exchangeRate" type="number" inputmode="decimal" step="0.0001" min="0" value="1">
+          <span class="hint">台幣場填 1；韓國場可填「1 韓元約幾台幣」。</span>
+        </label>
+
+        <label>
+          預算上限（台幣）
+          <input id="budget" type="number" inputmode="numeric" min="0" step="1" placeholder="例如 6000">
+        </label>
+      </div>
+
+      <details open>
+        <summary>額外費用</summary>
+        <div class="expense-grid">
+          <label>交通費 <input data-extra="transport" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>餐飲費 <input data-extra="food" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>住宿費 <input data-extra="lodging" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>入場/票券 <input data-extra="ticket" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>代購/服務費 <input data-extra="proxy_fee" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>付款/轉帳手續費 <input data-extra="payment_fee" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>其他雜費 <input data-extra="other" type="number" inputmode="numeric" min="0" step="1" value="0"></label>
+          <label>商品加成 % <input data-extra="service_rate_percent" type="number" inputmode="decimal" min="0" step="0.1" value="0"></label>
+          <label>預備金 % <input data-extra="reserve_rate_percent" type="number" inputmode="decimal" min="0" step="0.1" value="10"></label>
+        </div>
+      </details>
+
+      <div class="actions">
+        <button id="resetBtn" class="secondary">清空數量</button>
+        <button id="defaultBtn" class="secondary">載入 Excel 原數量</button>
+      </div>
+    </section>
+
+    <aside class="panel summary" id="summaryPanel" aria-labelledby="summaryTitle">
+      <h2 id="summaryTitle">2. 計算結果</h2>
+      <div class="cards">
+        <div class="card">
+          <span>商品原幣總額</span>
+          <strong id="subtotalOriginal">0</strong>
+        </div>
+        <div class="card">
+          <span>商品台幣換算</span>
+          <strong id="subtotalTwd">NT$0</strong>
+        </div>
+        <div class="card">
+          <span>額外費用</span>
+          <strong id="extrasTotal">NT$0</strong>
+        </div>
+        <div class="card primary">
+          <span>預估總花費</span>
+          <strong id="grandTotal">NT$0</strong>
+        </div>
+      </div>
+
+      <div class="budget-line" id="budgetLine">尚未設定預算。</div>
+      <div class="cash-line" id="cashSuggestion">建議至少準備：NT$0</div>
+
+      <h3>滿額贈估算</h3>
+      <ul id="rewardList" class="reward-list"></ul>
+
+      <h3>已選商品</h3>
+      <div id="cartList" class="cart-list empty">目前尚未選擇商品。</div>
+
+      <div id="warningList" class="warnings"></div>
+    </aside>
+
+    <section class="panel products-panel" aria-labelledby="productsTitle">
+      <div class="products-head">
+        <div>
+          <h2 id="productsTitle">3. 商品清單</h2>
+          <p id="eventInfo" class="hint"></p>
+        </div>
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="搜尋品項、款式、備註…">
+          <label class="checkline">
+            <input id="selectedOnly" type="checkbox">
+            只看已選
+          </label>
+        </div>
+      </div>
+
+      <div class="mobile-tip">手機版會自動改成商品卡片，可以直接按 ＋／－ 調整數量。</div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>品項</th>
+              <th>款式</th>
+              <th>單價</th>
+              <th>數量</th>
+              <th>小計</th>
+              <th>官方備註</th>
+            </tr>
+          </thead>
+          <tbody id="productsBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-total-bar" aria-live="polite">
+    <div>
+      <span>預估總花費</span>
+      <strong id="mobileGrandTotal">NT$0</strong>
+      <small id="mobileSelectedCount">已選 0 項</small>
+    </div>
+    <a href="#summaryPanel">明細</a>
+  </div>
+
+  <script>
+    window.__CATALOG__ = {{ catalog | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
