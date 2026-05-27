@@ -373,6 +373,43 @@ button.secondary:hover { background: #e6d2c0; }
   gap: 18px;
   margin-bottom: 14px;
 }
+
+.products-head > div:first-child {
+  min-width: 240px;
+  flex: 1 1 auto;
+}
+#eventInfo.event-meta,
+#eventInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+.event-meta-label {
+  color: var(--muted);
+  font-weight: 700;
+}
+.event-meta-name {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.25;
+  max-width: 100%;
+}
+.event-meta-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #f2e8dc;
+  color: var(--brown);
+  font-weight: 800;
+  white-space: nowrap;
+}
 .toolbar {
   display: flex;
   gap: 12px;
@@ -759,5 +796,21 @@ td.note {
   }
   .reward-count-text {
     font-size: 15px;
+  }
+}
+
+
+@media (max-width: 720px) {
+  #eventInfo {
+    gap: 6px;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .event-meta-name {
+    font-size: 13px;
+  }
+  .event-meta-chip {
+    min-height: 22px;
+    padding: 2px 8px;
   }
 }

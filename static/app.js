@@ -102,7 +102,15 @@ function renderProducts() {
   const meta = eventMeta();
   const currency = meta.currency || "TWD";
 
-  $("#eventInfo").textContent = `目前場次：${currentEvent}；幣別：${currency}；商品數：${products.length} 項。`;
+  const shortEventName = currentEvent
+    .replace(/^SPAKLZ\s+2026\s+WORLD\s+TOUR\s*/i, "")
+    .trim() || currentEvent;
+  $("#eventInfo").innerHTML = `
+    <span class="event-meta-label">目前場次</span>
+    <strong class="event-meta-name" title="${escapeHtml(currentEvent)}">${escapeHtml(shortEventName)}</strong>
+    <span class="event-meta-chip">${escapeHtml(currency)}</span>
+    <span class="event-meta-chip">${products.length} 項</span>
+  `;
 
   const rows = [];
   for (const p of products) {
