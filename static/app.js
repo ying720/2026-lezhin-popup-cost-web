@@ -361,12 +361,17 @@ function bindInputs() {
     input.addEventListener("change", calculate);
   });
 
-  $("#resetBtn").addEventListener("click", () => {
+  const clearAllQuantities = () => {
     for (const p of eventProducts()) quantities[p.id] = 0;
     saveQuantities();
     renderProducts();
     calculate();
-  });
+  };
+
+  $("#resetBtn").addEventListener("click", clearAllQuantities);
+
+  const mobileResetBtn = $("#mobileResetBtn");
+  if (mobileResetBtn) mobileResetBtn.addEventListener("click", clearAllQuantities);
 
   $("#defaultBtn").addEventListener("click", () => {
     loadQuantities(true);

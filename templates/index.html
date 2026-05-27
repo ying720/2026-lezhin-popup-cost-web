@@ -137,12 +137,15 @@
   </main>
 
   <div class="mobile-total-bar" aria-live="polite">
-    <div>
+    <div class="mobile-total-main">
       <span>預估總花費</span>
       <strong id="mobileGrandTotal">NT$0</strong>
       <small id="mobileSelectedCount">已選 0 項</small>
     </div>
-    <a href="#summaryPanel">明細</a>
+    <div class="mobile-total-actions">
+      <button id="mobileResetBtn" type="button" class="mobile-clear-btn">清空</button>
+      <a href="#summaryPanel">明細</a>
+    </div>
   </div>
 
   <script>
