@@ -1115,3 +1115,64 @@ td.note {
     display: none !important;
   }
 }
+
+/* Softer mobile product card separators */
+@media (max-width: 720px) {
+  tr.product-row {
+    overflow: hidden;
+  }
+
+  td.product-name-cell,
+  td {
+    border-bottom: 0 !important;
+  }
+
+  td.product-name-cell,
+  td:not(.product-name-cell) {
+    position: relative;
+  }
+
+  td.product-name-cell::after,
+  td[data-label="款式"]::after,
+  td.price::after,
+  td.qty-cell::after,
+  td.line-total::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 0;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgba(164, 101, 69, 0.18) 0 7px,
+      transparent 7px 15px
+    );
+    opacity: 0.9;
+    pointer-events: none;
+  }
+
+  td[data-label="款式"],
+  td.price,
+  td.qty-cell,
+  td.line-total {
+    background: rgba(255, 253, 249, 0.86);
+  }
+
+  td.qty-cell {
+    background: linear-gradient(180deg, rgba(255, 250, 244, 0.9), rgba(255, 247, 238, 0.72));
+  }
+
+  td.line-total {
+    background: rgba(255, 248, 240, 0.78);
+  }
+
+  td.note {
+    border-top: 0 !important;
+    background: rgba(255, 253, 249, 0.9) !important;
+  }
+
+  td.note::after {
+    display: none !important;
+  }
+}
