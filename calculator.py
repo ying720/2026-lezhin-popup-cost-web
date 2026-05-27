@@ -46,23 +46,23 @@ def estimate_rewards(event_name: str, currency: str, subtotal_original: float) -
         rewards.append({
             "label": "NT$1,000 滿贈 Skinship 明信片",
             "count": 1 if subtotal_original >= 1000 else 0,
-            "note": "Excel 備註寫每人每日入場限兌換 1 張，不累贈。"
+            "note": "每人每日入場限兌換 1 張，不累贈。"
         })
         rewards.append({
             "label": "NT$2,000 滿贈小卡",
             "count": int(subtotal_original // 1000) if subtotal_original >= 2000 else 0,
-            "note": "Excel 備註寫 2,000 贈 2 張，其後每滿 1,000 再贈 1 張。"
+            "note": "2,000 贈 2 張，其後每滿 1,000 再贈 1 張。"
         })
     elif "韓國" in event_name:
         rewards.append({
             "label": "₩50,000 滿贈親密互動畫面相卡",
             "count": 1 if subtotal_original >= 50000 else 0,
-            "note": "Excel 備註寫線下每人每場最多 1 張。"
+            "note": "線下每人每場最多 1 張。"
         })
         rewards.append({
             "label": "₩100,000 滿贈透卡＋小卡組",
             "count": min(7, int(subtotal_original // 100000)),
-            "note": "Excel 備註寫可累贈，每人每場上限 70 萬韓幣，也就是最多 7 組。"
+            "note": "可累贈，每人每場上限 70 萬韓幣，也就是最多 7 組。"
         })
     elif "白夜" in event_name:
         rewards.append({
