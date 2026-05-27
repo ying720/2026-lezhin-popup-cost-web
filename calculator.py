@@ -42,7 +42,7 @@ def estimate_rewards(event_name: str, currency: str, subtotal_original: float) -
     """依照 Excel 裡看得到的滿額文字做保守估算；實際以官方公告為準。"""
     rewards: List[Dict[str, Any]] = []
 
-    if "0606-0621" in event_name:
+    if "SPAKLZ 2026 WORLD TOUR 台北場" in event_name or "0606-0621" in event_name:
         rewards.append({
             "label": "NT$1,000 滿贈 Skinship 明信片",
             "count": 1 if subtotal_original >= 1000 else 0,

@@ -1,6 +1,6 @@
 {
   "source_file": "2026Lezhin SPAKLZ MD.xlsx",
-  "generated_note": "商品資料由 Excel 工作表整理而成；匯率、交通、餐飲、住宿與手續費可在網頁上自行調整。｜2026-05-27 修正：0606-0621台北場中標示 (攻/受) 且官方每款限購1的列，因一列合併攻款與受款，參考限購改為2。",
+  "generated_note": "商品資料由 Excel 工作表整理而成；匯率、交通、餐飲、住宿與手續費可在網頁上自行調整。｜2026-05-27 修正：SPAKLZ 2026 WORLD TOUR 台北場中標示 (攻/受) 且官方每款限購1的列，因一列合併攻款與受款，參考限購改為2。｜2026-05-27 修正：場次名稱更新為 SPAKLZ 2026 WORLD TOUR 台北場／韓國場。",
   "events": [
     {
       "name": "白夜的花路 台北場",
@@ -11,7 +11,7 @@
       "default_selected_amount": 0
     },
     {
-      "name": "0606-0621台北場",
+      "name": "SPAKLZ 2026 WORLD TOUR 台北場",
       "currency": "TWD",
       "default_exchange_rate": 1,
       "product_count": 138,
@@ -19,7 +19,7 @@
       "default_selected_amount": 600
     },
     {
-      "name": "「0520-0525韓國場」的副本",
+      "name": "SPAKLZ 2026 WORLD TOUR 韓國場",
       "currency": "KRW",
       "default_exchange_rate": 0.023,
       "product_count": 150,
@@ -342,10 +342,10 @@
         "source_block": 1
       }
     ],
-    "0606-0621台北場": [
+    "SPAKLZ 2026 WORLD TOUR 台北場": [
       {
         "id": "p0025",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "Backlight (攻/受)",
@@ -359,7 +359,7 @@
       },
       {
         "id": "p0026",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "Diamond Dust (攻/受)",
@@ -373,7 +373,7 @@
       },
       {
         "id": "p0027",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "Jinx (攻/受)",
@@ -387,7 +387,7 @@
       },
       {
         "id": "p0028",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "Limited Run (攻/受)",
@@ -401,7 +401,7 @@
       },
       {
         "id": "p0029",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "R2R (攻/受)",
@@ -415,7 +415,7 @@
       },
       {
         "id": "p0030",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "UNSLEEP (攻/受)",
@@ -429,7 +429,7 @@
       },
       {
         "id": "p0031",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "夜畫帳 (攻/受)",
@@ -443,7 +443,7 @@
       },
       {
         "id": "p0032",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "融冰曲線 (攻/受)",
@@ -457,7 +457,7 @@
       },
       {
         "id": "p0033",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "黑色木馬 (攻/受)",
@@ -471,7 +471,7 @@
       },
       {
         "id": "p0034",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "香味的界線 (攻/受)",
@@ -485,7 +485,7 @@
       },
       {
         "id": "p0035",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "戀愛幻想曲 (攻/受)",
@@ -499,7 +499,7 @@
       },
       {
         "id": "p0036",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "珍珠少年:發火 (攻/受)",
@@ -513,7 +513,7 @@
       },
       {
         "id": "p0037",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "薛西弗斯的獵犬 (攻/受)",
@@ -527,7 +527,7 @@
       },
       {
         "id": "p0038",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "如此討人喜愛的你 (攻/受)",
@@ -541,7 +541,7 @@
       },
       {
         "id": "p0039",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "隨機卡包 - B.F (攻)",
@@ -554,7 +554,7 @@
       },
       {
         "id": "p0040",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "隨機卡包 - MEMBER (受)",
@@ -567,7 +567,7 @@
       },
       {
         "id": "p0041",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "AR STAR 徽章 - A (攻)",
@@ -580,7 +580,7 @@
       },
       {
         "id": "p0042",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "AR STAR 徽章 - B (受)",
@@ -593,7 +593,7 @@
       },
       {
         "id": "p0043",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "光柵票卡 - B.F (攻)",
@@ -606,7 +606,7 @@
       },
       {
         "id": "p0044",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "壓克力立牌",
         "variant": "光柵票卡 - MEMBER (受)",
@@ -619,7 +619,7 @@
       },
       {
         "id": "p0045",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "Backlight",
@@ -632,7 +632,7 @@
       },
       {
         "id": "p0046",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "Diamond Dust",
@@ -645,7 +645,7 @@
       },
       {
         "id": "p0047",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "Jinx",
@@ -658,7 +658,7 @@
       },
       {
         "id": "p0048",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "Limited Run",
@@ -671,7 +671,7 @@
       },
       {
         "id": "p0049",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "R2R",
@@ -684,7 +684,7 @@
       },
       {
         "id": "p0050",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "UNSLEEP",
@@ -697,7 +697,7 @@
       },
       {
         "id": "p0051",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "夜畫帳",
@@ -710,7 +710,7 @@
       },
       {
         "id": "p0052",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "融冰曲線",
@@ -723,7 +723,7 @@
       },
       {
         "id": "p0053",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "黑色木馬",
@@ -736,7 +736,7 @@
       },
       {
         "id": "p0054",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "香味的界線",
@@ -749,7 +749,7 @@
       },
       {
         "id": "p0055",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "戀愛幻想曲",
@@ -762,7 +762,7 @@
       },
       {
         "id": "p0056",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "珍珠少年:發火",
@@ -775,7 +775,7 @@
       },
       {
         "id": "p0057",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬",
@@ -788,7 +788,7 @@
       },
       {
         "id": "p0058",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "NFC鑰匙圈\n(含1張小卡)",
         "variant": "如此討人喜愛的你",
@@ -801,7 +801,7 @@
       },
       {
         "id": "p0059",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "Backlight (攻/受)",
@@ -815,7 +815,7 @@
       },
       {
         "id": "p0060",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "Diamond Dust (攻/受)",
@@ -829,7 +829,7 @@
       },
       {
         "id": "p0061",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "Jinx (攻/受)",
@@ -843,7 +843,7 @@
       },
       {
         "id": "p0062",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "Limited Run (攻/受)",
@@ -857,7 +857,7 @@
       },
       {
         "id": "p0063",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "R2R (攻/受)",
@@ -871,7 +871,7 @@
       },
       {
         "id": "p0064",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "UNSLEEP (攻/受)",
@@ -885,7 +885,7 @@
       },
       {
         "id": "p0065",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "夜畫帳 (攻/受)",
@@ -899,7 +899,7 @@
       },
       {
         "id": "p0066",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "融冰曲線 (攻/受)",
@@ -913,7 +913,7 @@
       },
       {
         "id": "p0067",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "黑色木馬 (攻/受)",
@@ -927,7 +927,7 @@
       },
       {
         "id": "p0068",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "香味的界線 (攻/受)",
@@ -941,7 +941,7 @@
       },
       {
         "id": "p0069",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "戀愛幻想曲 (攻/受)",
@@ -955,7 +955,7 @@
       },
       {
         "id": "p0070",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "珍珠少年:發火 (攻/受)",
@@ -969,7 +969,7 @@
       },
       {
         "id": "p0071",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬 (攻/受)",
@@ -983,7 +983,7 @@
       },
       {
         "id": "p0072",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "如此討人喜愛的你 (攻/受)",
@@ -997,7 +997,7 @@
       },
       {
         "id": "p0073",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "T-Shirt (含14款小卡)",
@@ -1010,7 +1010,7 @@
       },
       {
         "id": "p0074",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "隨機舞台卡 - B.F (攻)",
@@ -1023,7 +1023,7 @@
       },
       {
         "id": "p0075",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "隨機舞台卡 - MEMBER (受)",
@@ -1036,7 +1036,7 @@
       },
       {
         "id": "p0076",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "LEZHIN STAGE立牌\n(含1張小卡)",
         "variant": "拍立得 (含1張小卡)",
@@ -1049,7 +1049,7 @@
       },
       {
         "id": "p0077",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "Backlight",
@@ -1062,7 +1062,7 @@
       },
       {
         "id": "p0078",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "Diamond Dust",
@@ -1075,7 +1075,7 @@
       },
       {
         "id": "p0079",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "Jinx",
@@ -1088,7 +1088,7 @@
       },
       {
         "id": "p0080",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "Limited Run",
@@ -1101,7 +1101,7 @@
       },
       {
         "id": "p0081",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "R2R",
@@ -1114,7 +1114,7 @@
       },
       {
         "id": "p0082",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "UNSLEEP",
@@ -1127,7 +1127,7 @@
       },
       {
         "id": "p0083",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "夜畫帳",
@@ -1140,7 +1140,7 @@
       },
       {
         "id": "p0084",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "融冰曲線",
@@ -1153,7 +1153,7 @@
       },
       {
         "id": "p0085",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "黑色木馬",
@@ -1166,7 +1166,7 @@
       },
       {
         "id": "p0086",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "香味的界線",
@@ -1179,7 +1179,7 @@
       },
       {
         "id": "p0087",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "戀愛幻想曲",
@@ -1192,7 +1192,7 @@
       },
       {
         "id": "p0088",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "珍珠少年:發火",
@@ -1205,7 +1205,7 @@
       },
       {
         "id": "p0089",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "薛西弗斯的獵犬",
@@ -1218,7 +1218,7 @@
       },
       {
         "id": "p0090",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "CROSSOVER\n立牌",
         "variant": "如此討人喜愛的你",
@@ -1231,7 +1231,7 @@
       },
       {
         "id": "p0091",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "Backlight",
@@ -1244,7 +1244,7 @@
       },
       {
         "id": "p0092",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "Diamond Dust",
@@ -1257,7 +1257,7 @@
       },
       {
         "id": "p0093",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "Jinx",
@@ -1270,7 +1270,7 @@
       },
       {
         "id": "p0094",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "Limited Run",
@@ -1283,7 +1283,7 @@
       },
       {
         "id": "p0095",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "R2R",
@@ -1296,7 +1296,7 @@
       },
       {
         "id": "p0096",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "UNSLEEP",
@@ -1309,7 +1309,7 @@
       },
       {
         "id": "p0097",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "夜畫帳",
@@ -1322,7 +1322,7 @@
       },
       {
         "id": "p0098",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "融冰曲線",
@@ -1335,7 +1335,7 @@
       },
       {
         "id": "p0099",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "黑色木馬",
@@ -1348,7 +1348,7 @@
       },
       {
         "id": "p0100",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "香味的界線",
@@ -1361,7 +1361,7 @@
       },
       {
         "id": "p0101",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "戀愛幻想曲",
@@ -1374,7 +1374,7 @@
       },
       {
         "id": "p0102",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "珍珠少年:發火",
@@ -1387,7 +1387,7 @@
       },
       {
         "id": "p0103",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "薛西弗斯的獵犬",
@@ -1400,7 +1400,7 @@
       },
       {
         "id": "p0104",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "SPIN旋轉立牌",
         "variant": "如此討人喜愛的你",
@@ -1413,7 +1413,7 @@
       },
       {
         "id": "p0105",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "Backlight",
@@ -1426,7 +1426,7 @@
       },
       {
         "id": "p0106",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "Diamond Dust",
@@ -1439,7 +1439,7 @@
       },
       {
         "id": "p0107",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "Jinx",
@@ -1452,7 +1452,7 @@
       },
       {
         "id": "p0108",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "Limited Run",
@@ -1465,7 +1465,7 @@
       },
       {
         "id": "p0109",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "R2R",
@@ -1478,7 +1478,7 @@
       },
       {
         "id": "p0110",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "UNSLEEP",
@@ -1491,7 +1491,7 @@
       },
       {
         "id": "p0111",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "夜畫帳",
@@ -1504,7 +1504,7 @@
       },
       {
         "id": "p0112",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "融冰曲線",
@@ -1517,7 +1517,7 @@
       },
       {
         "id": "p0113",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "黑色木馬",
@@ -1530,7 +1530,7 @@
       },
       {
         "id": "p0114",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "香味的界線",
@@ -1543,7 +1543,7 @@
       },
       {
         "id": "p0115",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "戀愛幻想曲",
@@ -1556,7 +1556,7 @@
       },
       {
         "id": "p0116",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "珍珠少年:發火",
@@ -1569,7 +1569,7 @@
       },
       {
         "id": "p0117",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬",
@@ -1582,7 +1582,7 @@
       },
       {
         "id": "p0118",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "手幅\n(含1張小卡)",
         "variant": "如此討人喜愛的你",
@@ -1595,7 +1595,7 @@
       },
       {
         "id": "p0119",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "Q版吊飾",
         "variant": "A (攻)",
@@ -1608,7 +1608,7 @@
       },
       {
         "id": "p0120",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "Q版吊飾",
         "variant": "B (受)",
@@ -1621,7 +1621,7 @@
       },
       {
         "id": "p0121",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "Q版立牌",
         "variant": "Q版立牌 - A (攻)",
@@ -1634,7 +1634,7 @@
       },
       {
         "id": "p0122",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "Q版立牌",
         "variant": "Q版立牌 - B (受)",
@@ -1647,7 +1647,7 @@
       },
       {
         "id": "p0123",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "Q版立牌",
         "variant": "迷你舞台立牌",
@@ -1660,7 +1660,7 @@
       },
       {
         "id": "p0124",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "Backlight (攻/受)",
@@ -1674,7 +1674,7 @@
       },
       {
         "id": "p0125",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "Diamond Dust (攻/受)",
@@ -1688,7 +1688,7 @@
       },
       {
         "id": "p0126",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "Jinx (攻/受)",
@@ -1702,7 +1702,7 @@
       },
       {
         "id": "p0127",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "Limited Run (攻/受)",
@@ -1716,7 +1716,7 @@
       },
       {
         "id": "p0128",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "R2R (攻/受)",
@@ -1730,7 +1730,7 @@
       },
       {
         "id": "p0129",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "UNSLEEP (攻/受)",
@@ -1744,7 +1744,7 @@
       },
       {
         "id": "p0130",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "夜畫帳 (攻/受)",
@@ -1758,7 +1758,7 @@
       },
       {
         "id": "p0131",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "融冰曲線 (攻/受)",
@@ -1772,7 +1772,7 @@
       },
       {
         "id": "p0132",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "黑色木馬 (攻/受)",
@@ -1786,7 +1786,7 @@
       },
       {
         "id": "p0133",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "香味的界線 (攻/受)",
@@ -1800,7 +1800,7 @@
       },
       {
         "id": "p0134",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "戀愛幻想曲 (攻/受)",
@@ -1814,7 +1814,7 @@
       },
       {
         "id": "p0135",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "珍珠少年:發火 (攻/受)",
@@ -1828,7 +1828,7 @@
       },
       {
         "id": "p0136",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "薛西弗斯的獵犬 (攻/受)",
@@ -1842,7 +1842,7 @@
       },
       {
         "id": "p0137",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "如此討人喜愛的你 (攻/受)",
@@ -1856,7 +1856,7 @@
       },
       {
         "id": "p0138",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "PVC娃包",
@@ -1869,7 +1869,7 @@
       },
       {
         "id": "p0139",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "絨毛娃娃",
         "variant": "應援棒吊飾 (含2張貼紙)",
@@ -1882,7 +1882,7 @@
       },
       {
         "id": "p0140",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "娃衣",
         "variant": "演唱會娃衣 款",
@@ -1895,7 +1895,7 @@
       },
       {
         "id": "p0141",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "娃衣",
         "variant": "A 款",
@@ -1908,7 +1908,7 @@
       },
       {
         "id": "p0142",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "娃衣",
         "variant": "B 款",
@@ -1921,7 +1921,7 @@
       },
       {
         "id": "p0143",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "娃衣",
         "variant": "C 款",
@@ -1934,7 +1934,7 @@
       },
       {
         "id": "p0144",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "娃衣",
         "variant": "D 款",
@@ -1947,7 +1947,7 @@
       },
       {
         "id": "p0145",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "海報",
         "variant": "B.F (攻)",
@@ -1960,7 +1960,7 @@
       },
       {
         "id": "p0146",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "海報",
         "variant": "MEMBER (受)",
@@ -1973,7 +1973,7 @@
       },
       {
         "id": "p0147",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "Backlight",
@@ -1986,7 +1986,7 @@
       },
       {
         "id": "p0148",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨Diamond Dust",
@@ -1999,7 +1999,7 @@
       },
       {
         "id": "p0149",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "Jinx",
@@ -2012,7 +2012,7 @@
       },
       {
         "id": "p0150",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "Limited Run",
@@ -2025,7 +2025,7 @@
       },
       {
         "id": "p0151",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨R2R",
@@ -2038,7 +2038,7 @@
       },
       {
         "id": "p0152",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "UNSLEEP",
@@ -2051,7 +2051,7 @@
       },
       {
         "id": "p0153",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "夜畫帳",
@@ -2064,7 +2064,7 @@
       },
       {
         "id": "p0154",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "融冰曲線",
@@ -2077,7 +2077,7 @@
       },
       {
         "id": "p0155",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "香味的界線",
@@ -2090,7 +2090,7 @@
       },
       {
         "id": "p0156",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨戀愛幻想曲",
@@ -2103,7 +2103,7 @@
       },
       {
         "id": "p0157",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "珍珠少年:發火",
@@ -2116,7 +2116,7 @@
       },
       {
         "id": "p0158",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "薛西弗斯的獵犬",
@@ -2129,7 +2129,7 @@
       },
       {
         "id": "p0159",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨如此討人喜愛的你",
@@ -2142,7 +2142,7 @@
       },
       {
         "id": "p0160",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "🇹🇼🇹🇼🇹🇼\n台灣ONLY",
         "variant": "SPAKLZ-燈箱吊飾盲袋",
@@ -2155,7 +2155,7 @@
       },
       {
         "id": "p0161",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "🇹🇼🇹🇼🇹🇼\n台灣ONLY",
         "variant": "隨機氣泡飲 - 蜂蜜檸檬沙瓦",
@@ -2168,7 +2168,7 @@
       },
       {
         "id": "p0162",
-        "event": "0606-0621台北場",
+        "event": "SPAKLZ 2026 WORLD TOUR 台北場",
         "currency": "TWD",
         "item": "🇹🇼🇹🇼🇹🇼\n台灣ONLY",
         "variant": "隨機氣泡飲 - 純氣泡水",
@@ -2180,10 +2180,10 @@
         "source_block": 4
       }
     ],
-    "「0520-0525韓國場」的副本": [
+    "SPAKLZ 2026 WORLD TOUR 韓國場": [
       {
         "id": "p0163",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "Backlight (攻/受)",
@@ -2196,7 +2196,7 @@
       },
       {
         "id": "p0164",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "Diamond Dust (攻/受)",
@@ -2209,7 +2209,7 @@
       },
       {
         "id": "p0165",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "Jinx (攻/受)",
@@ -2222,7 +2222,7 @@
       },
       {
         "id": "p0166",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "Limited Run (攻/受)",
@@ -2235,7 +2235,7 @@
       },
       {
         "id": "p0167",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "R2R (攻/受)",
@@ -2248,7 +2248,7 @@
       },
       {
         "id": "p0168",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "UNSLEEP (攻/受)",
@@ -2261,7 +2261,7 @@
       },
       {
         "id": "p0169",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "夜畫帳 (攻/受)",
@@ -2274,7 +2274,7 @@
       },
       {
         "id": "p0170",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "融冰曲線 (攻/受)",
@@ -2287,7 +2287,7 @@
       },
       {
         "id": "p0171",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "黑色木馬 (攻/受)",
@@ -2300,7 +2300,7 @@
       },
       {
         "id": "p0172",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "香味的界線 (攻/受)",
@@ -2313,7 +2313,7 @@
       },
       {
         "id": "p0173",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "戀愛幻想曲 (攻/受)",
@@ -2326,7 +2326,7 @@
       },
       {
         "id": "p0174",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "珍珠少年:發火 (攻/受)",
@@ -2339,7 +2339,7 @@
       },
       {
         "id": "p0175",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "薛西弗斯的獵犬 (攻/受)",
@@ -2352,7 +2352,7 @@
       },
       {
         "id": "p0176",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "如此討人喜愛的你 (攻/受)",
@@ -2365,7 +2365,7 @@
       },
       {
         "id": "p0177",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "隨機卡包 - A (攻)",
@@ -2378,7 +2378,7 @@
       },
       {
         "id": "p0178",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "隨機卡包 - B (受)",
@@ -2391,7 +2391,7 @@
       },
       {
         "id": "p0179",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "AR STAR 徽章 - A (攻)",
@@ -2404,7 +2404,7 @@
       },
       {
         "id": "p0180",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "AR STAR 徽章 - B (受)",
@@ -2417,7 +2417,7 @@
       },
       {
         "id": "p0181",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "3D變化票卡 - A (攻)",
@@ -2430,7 +2430,7 @@
       },
       {
         "id": "p0182",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人立牌",
         "variant": "3D變化票卡 - B (受)",
@@ -2443,7 +2443,7 @@
       },
       {
         "id": "p0183",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "Backlight",
@@ -2456,7 +2456,7 @@
       },
       {
         "id": "p0184",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "Diamond Dust",
@@ -2469,7 +2469,7 @@
       },
       {
         "id": "p0185",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "Jinx",
@@ -2482,7 +2482,7 @@
       },
       {
         "id": "p0186",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "Limited Run",
@@ -2495,7 +2495,7 @@
       },
       {
         "id": "p0187",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "R2R",
@@ -2508,7 +2508,7 @@
       },
       {
         "id": "p0188",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "UNSLEEP",
@@ -2521,7 +2521,7 @@
       },
       {
         "id": "p0189",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "夜畫帳",
@@ -2534,7 +2534,7 @@
       },
       {
         "id": "p0190",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "融冰曲線",
@@ -2547,7 +2547,7 @@
       },
       {
         "id": "p0191",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "黑色木馬",
@@ -2560,7 +2560,7 @@
       },
       {
         "id": "p0192",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "香味的界線",
@@ -2573,7 +2573,7 @@
       },
       {
         "id": "p0193",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "戀愛幻想曲",
@@ -2586,7 +2586,7 @@
       },
       {
         "id": "p0194",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "珍珠少年:發火",
@@ -2599,7 +2599,7 @@
       },
       {
         "id": "p0195",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬",
@@ -2612,7 +2612,7 @@
       },
       {
         "id": "p0196",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "SHOWCASE SET\n(含1張小卡)",
         "variant": "如此討人喜愛的你",
@@ -2625,7 +2625,7 @@
       },
       {
         "id": "p0197",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "Backlight",
@@ -2638,7 +2638,7 @@
       },
       {
         "id": "p0198",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "Diamond Dust",
@@ -2651,7 +2651,7 @@
       },
       {
         "id": "p0199",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "Jinx",
@@ -2664,7 +2664,7 @@
       },
       {
         "id": "p0200",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "Limited Run",
@@ -2677,7 +2677,7 @@
       },
       {
         "id": "p0201",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "R2R",
@@ -2690,7 +2690,7 @@
       },
       {
         "id": "p0202",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "UNSLEEP",
@@ -2703,7 +2703,7 @@
       },
       {
         "id": "p0203",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "夜畫帳",
@@ -2716,7 +2716,7 @@
       },
       {
         "id": "p0204",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "融冰曲線",
@@ -2729,7 +2729,7 @@
       },
       {
         "id": "p0205",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "黑色木馬",
@@ -2742,7 +2742,7 @@
       },
       {
         "id": "p0206",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "香味的界線",
@@ -2755,7 +2755,7 @@
       },
       {
         "id": "p0207",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "戀愛幻想曲",
@@ -2768,7 +2768,7 @@
       },
       {
         "id": "p0208",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "珍珠少年:發火",
@@ -2781,7 +2781,7 @@
       },
       {
         "id": "p0209",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬",
@@ -2794,7 +2794,7 @@
       },
       {
         "id": "p0210",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "NFC專輯\n(含1張小卡)",
         "variant": "如此討人喜愛的你",
@@ -2807,7 +2807,7 @@
       },
       {
         "id": "p0211",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "Backlight (攻/受)",
@@ -2820,7 +2820,7 @@
       },
       {
         "id": "p0212",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "Diamond Dust (攻/受)",
@@ -2833,7 +2833,7 @@
       },
       {
         "id": "p0213",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "Jinx (攻/受)",
@@ -2846,7 +2846,7 @@
       },
       {
         "id": "p0214",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "Limited Run (攻/受)",
@@ -2859,7 +2859,7 @@
       },
       {
         "id": "p0215",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "R2R (攻/受)",
@@ -2872,7 +2872,7 @@
       },
       {
         "id": "p0216",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "UNSLEEP (攻/受)",
@@ -2885,7 +2885,7 @@
       },
       {
         "id": "p0217",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "夜畫帳 (攻/受)",
@@ -2898,7 +2898,7 @@
       },
       {
         "id": "p0218",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "融冰曲線 (攻/受)",
@@ -2911,7 +2911,7 @@
       },
       {
         "id": "p0219",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "黑色木馬 (攻/受)",
@@ -2924,7 +2924,7 @@
       },
       {
         "id": "p0220",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "香味的界線 (攻/受)",
@@ -2937,7 +2937,7 @@
       },
       {
         "id": "p0221",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "戀愛幻想曲 (攻/受)",
@@ -2950,7 +2950,7 @@
       },
       {
         "id": "p0222",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "珍珠少年:發火 (攻/受)",
@@ -2963,7 +2963,7 @@
       },
       {
         "id": "p0223",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬 (攻/受)",
@@ -2976,7 +2976,7 @@
       },
       {
         "id": "p0224",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "個人直拍立牌\n(含1張小卡)",
         "variant": "如此討人喜愛的你 (攻/受)",
@@ -2989,7 +2989,7 @@
       },
       {
         "id": "p0225",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "",
         "variant": "T-Shirt (含14款小卡)",
@@ -3002,7 +3002,7 @@
       },
       {
         "id": "p0226",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "",
         "variant": "直拍明信片 - A (攻)",
@@ -3015,7 +3015,7 @@
       },
       {
         "id": "p0227",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "",
         "variant": "直拍明信片 - B (受)",
@@ -3028,7 +3028,7 @@
       },
       {
         "id": "p0228",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "",
         "variant": "拍立得 (含1張小卡)",
@@ -3041,7 +3041,7 @@
       },
       {
         "id": "p0229",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "Backlight",
@@ -3054,7 +3054,7 @@
       },
       {
         "id": "p0230",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "Diamond Dust",
@@ -3067,7 +3067,7 @@
       },
       {
         "id": "p0231",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "Jinx",
@@ -3080,7 +3080,7 @@
       },
       {
         "id": "p0232",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "Limited Run",
@@ -3093,7 +3093,7 @@
       },
       {
         "id": "p0233",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "R2R",
@@ -3106,7 +3106,7 @@
       },
       {
         "id": "p0234",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "UNSLEEP",
@@ -3119,7 +3119,7 @@
       },
       {
         "id": "p0235",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "夜畫帳",
@@ -3132,7 +3132,7 @@
       },
       {
         "id": "p0236",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "融冰曲線",
@@ -3145,7 +3145,7 @@
       },
       {
         "id": "p0237",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "黑色木馬",
@@ -3158,7 +3158,7 @@
       },
       {
         "id": "p0238",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "香味的界線",
@@ -3171,7 +3171,7 @@
       },
       {
         "id": "p0239",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "戀愛幻想曲",
@@ -3184,7 +3184,7 @@
       },
       {
         "id": "p0240",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "珍珠少年:發火",
@@ -3197,7 +3197,7 @@
       },
       {
         "id": "p0241",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "薛西弗斯的獵犬",
@@ -3210,7 +3210,7 @@
       },
       {
         "id": "p0242",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "CROSSOVER\n立牌",
         "variant": "如此討人喜愛的你",
@@ -3223,7 +3223,7 @@
       },
       {
         "id": "p0243",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "Backlight",
@@ -3236,7 +3236,7 @@
       },
       {
         "id": "p0244",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "Diamond Dust",
@@ -3249,7 +3249,7 @@
       },
       {
         "id": "p0245",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "Jinx",
@@ -3262,7 +3262,7 @@
       },
       {
         "id": "p0246",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "Limited Run",
@@ -3275,7 +3275,7 @@
       },
       {
         "id": "p0247",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "R2R",
@@ -3288,7 +3288,7 @@
       },
       {
         "id": "p0248",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "UNSLEEP",
@@ -3301,7 +3301,7 @@
       },
       {
         "id": "p0249",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "夜畫帳",
@@ -3314,7 +3314,7 @@
       },
       {
         "id": "p0250",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "融冰曲線",
@@ -3327,7 +3327,7 @@
       },
       {
         "id": "p0251",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "黑色木馬",
@@ -3340,7 +3340,7 @@
       },
       {
         "id": "p0252",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "香味的界線",
@@ -3353,7 +3353,7 @@
       },
       {
         "id": "p0253",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "戀愛幻想曲",
@@ -3366,7 +3366,7 @@
       },
       {
         "id": "p0254",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "珍珠少年:發火",
@@ -3379,7 +3379,7 @@
       },
       {
         "id": "p0255",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "薛西弗斯的獵犬",
@@ -3392,7 +3392,7 @@
       },
       {
         "id": "p0256",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "旋轉立牌",
         "variant": "如此討人喜愛的你",
@@ -3405,7 +3405,7 @@
       },
       {
         "id": "p0257",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Backlight",
@@ -3418,7 +3418,7 @@
       },
       {
         "id": "p0258",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Diamond Dust",
@@ -3431,7 +3431,7 @@
       },
       {
         "id": "p0259",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Jinx",
@@ -3444,7 +3444,7 @@
       },
       {
         "id": "p0260",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Limited Run",
@@ -3457,7 +3457,7 @@
       },
       {
         "id": "p0261",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "R2R",
@@ -3470,7 +3470,7 @@
       },
       {
         "id": "p0262",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "UNSLEEP",
@@ -3483,7 +3483,7 @@
       },
       {
         "id": "p0263",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "夜畫帳",
@@ -3496,7 +3496,7 @@
       },
       {
         "id": "p0264",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "融冰曲線",
@@ -3509,7 +3509,7 @@
       },
       {
         "id": "p0265",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "黑色木馬",
@@ -3522,7 +3522,7 @@
       },
       {
         "id": "p0266",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "香味的界線",
@@ -3535,7 +3535,7 @@
       },
       {
         "id": "p0267",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "戀愛幻想曲",
@@ -3548,7 +3548,7 @@
       },
       {
         "id": "p0268",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "珍珠少年:發火",
@@ -3561,7 +3561,7 @@
       },
       {
         "id": "p0269",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "薛西弗斯的獵犬",
@@ -3574,7 +3574,7 @@
       },
       {
         "id": "p0270",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "如此討人喜愛的你",
@@ -3587,7 +3587,7 @@
       },
       {
         "id": "p0271",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Q版吊飾 - A (攻)",
@@ -3600,7 +3600,7 @@
       },
       {
         "id": "p0272",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Q版吊飾 - B (受)",
@@ -3613,7 +3613,7 @@
       },
       {
         "id": "p0273",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Q版立牌 - A (攻)",
@@ -3626,7 +3626,7 @@
       },
       {
         "id": "p0274",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "Q版立牌 - B (受)",
@@ -3639,7 +3639,7 @@
       },
       {
         "id": "p0275",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "手幅\n(含1張小卡)",
         "variant": "迷你舞台立牌",
@@ -3652,7 +3652,7 @@
       },
       {
         "id": "p0276",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "Backlight (攻/受)",
@@ -3665,7 +3665,7 @@
       },
       {
         "id": "p0277",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "Diamond Dust (攻/受)",
@@ -3678,7 +3678,7 @@
       },
       {
         "id": "p0278",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "Jinx (攻/受)",
@@ -3691,7 +3691,7 @@
       },
       {
         "id": "p0279",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "Limited Run (攻/受)",
@@ -3704,7 +3704,7 @@
       },
       {
         "id": "p0280",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "R2R (攻/受)",
@@ -3717,7 +3717,7 @@
       },
       {
         "id": "p0281",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "UNSLEEP (攻/受)",
@@ -3730,7 +3730,7 @@
       },
       {
         "id": "p0282",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "夜畫帳 (攻/受)",
@@ -3743,7 +3743,7 @@
       },
       {
         "id": "p0283",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "融冰曲線 (攻/受)",
@@ -3756,7 +3756,7 @@
       },
       {
         "id": "p0284",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "黑色木馬 (攻/受)",
@@ -3769,7 +3769,7 @@
       },
       {
         "id": "p0285",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "香味的界線 (攻/受)",
@@ -3782,7 +3782,7 @@
       },
       {
         "id": "p0286",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "戀愛幻想曲 (攻/受)",
@@ -3795,7 +3795,7 @@
       },
       {
         "id": "p0287",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "珍珠少年:發火 (攻/受)",
@@ -3808,7 +3808,7 @@
       },
       {
         "id": "p0288",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "薛西弗斯的獵犬 (攻/受)",
@@ -3821,7 +3821,7 @@
       },
       {
         "id": "p0289",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "如此討人喜愛的你 (攻/受)",
@@ -3834,7 +3834,7 @@
       },
       {
         "id": "p0290",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "PVC娃包",
@@ -3847,7 +3847,7 @@
       },
       {
         "id": "p0291",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "棉花娃",
         "variant": "應援棒吊飾 (含2張貼紙)",
@@ -3860,7 +3860,7 @@
       },
       {
         "id": "p0292",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "娃衣",
         "variant": "T-Shirt 款",
@@ -3873,7 +3873,7 @@
       },
       {
         "id": "p0293",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "娃衣",
         "variant": "A 款",
@@ -3886,7 +3886,7 @@
       },
       {
         "id": "p0294",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "娃衣",
         "variant": "B 款",
@@ -3899,7 +3899,7 @@
       },
       {
         "id": "p0295",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "娃衣",
         "variant": "C 款",
@@ -3912,7 +3912,7 @@
       },
       {
         "id": "p0296",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "娃衣",
         "variant": "D 款",
@@ -3925,7 +3925,7 @@
       },
       {
         "id": "p0297",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "❗",
         "variant": "A3海報 - A (攻)",
@@ -3938,7 +3938,7 @@
       },
       {
         "id": "p0298",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "❗",
         "variant": "A3海報 - B (受)",
@@ -3951,7 +3951,7 @@
       },
       {
         "id": "p0299",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "❗",
         "variant": "年曆",
@@ -3964,7 +3964,7 @@
       },
       {
         "id": "p0300",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "Backlight",
@@ -3977,7 +3977,7 @@
       },
       {
         "id": "p0301",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨Diamond Dust",
@@ -3990,7 +3990,7 @@
       },
       {
         "id": "p0302",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "Jinx",
@@ -4003,7 +4003,7 @@
       },
       {
         "id": "p0303",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "Limited Run",
@@ -4016,7 +4016,7 @@
       },
       {
         "id": "p0304",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨R2R",
@@ -4029,7 +4029,7 @@
       },
       {
         "id": "p0305",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "UNSLEEP",
@@ -4042,7 +4042,7 @@
       },
       {
         "id": "p0306",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "夜畫帳",
@@ -4055,7 +4055,7 @@
       },
       {
         "id": "p0307",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "融冰曲線",
@@ -4068,7 +4068,7 @@
       },
       {
         "id": "p0308",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "香味的界線",
@@ -4081,7 +4081,7 @@
       },
       {
         "id": "p0309",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨戀愛幻想曲",
@@ -4094,7 +4094,7 @@
       },
       {
         "id": "p0310",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "珍珠少年:發火",
@@ -4107,7 +4107,7 @@
       },
       {
         "id": "p0311",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "薛西弗斯的獵犬",
@@ -4120,7 +4120,7 @@
       },
       {
         "id": "p0312",
-        "event": "「0520-0525韓國場」的副本",
+        "event": "SPAKLZ 2026 WORLD TOUR 韓國場",
         "currency": "KRW",
         "item": "作品隨機卡包\n(新4款/舊9款)",
         "variant": "✨如此討人喜愛的你",
