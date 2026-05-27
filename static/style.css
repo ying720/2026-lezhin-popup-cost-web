@@ -1487,3 +1487,41 @@ body.theme-spaklz .mobile-total-bar a {
     );
   }
 }
+
+
+/* Improve SPAKLZ mobile bottom action contrast */
+@media (max-width: 720px) {
+  body.theme-spaklz .mobile-total-bar {
+    background: rgba(8, 22, 58, 0.96);
+    border: 1px solid rgba(207, 230, 58, 0.26);
+    box-shadow:
+      0 18px 44px rgba(0, 0, 0, 0.36),
+      0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  }
+
+  body.theme-spaklz .mobile-clear-btn {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    box-shadow: none;
+  }
+
+  body.theme-spaklz .mobile-clear-btn:hover,
+  body.theme-spaklz .mobile-clear-btn:active {
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+  }
+
+  body.theme-spaklz .mobile-total-bar a {
+    background: #cfe63a;
+    color: #071b44;
+    border: 1px solid rgba(207, 230, 58, 0.82);
+    box-shadow: 0 8px 22px rgba(207, 230, 58, 0.28);
+  }
+
+  body.theme-spaklz .mobile-total-bar a:hover,
+  body.theme-spaklz .mobile-total-bar a:active {
+    background: #dfff4f;
+    color: #071b44;
+  }
+}
