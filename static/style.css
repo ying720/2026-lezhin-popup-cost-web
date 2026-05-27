@@ -823,3 +823,248 @@ td.note {
     padding: 2px 8px;
   }
 }
+
+
+/* Mobile product card refinement */
+@media (max-width: 720px) {
+  body {
+    background: #fbf6ef;
+    font-size: 15px;
+  }
+
+  .layout {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .products-panel {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .products-head {
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(255, 250, 244, 0.96);
+    box-shadow: 0 10px 26px rgba(75, 50, 32, 0.06);
+  }
+
+  .products-head h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  #eventInfo.event-meta,
+  #eventInfo {
+    margin-top: 0;
+  }
+
+  .toolbar {
+    gap: 9px;
+  }
+
+  .toolbar input[type="search"] {
+    min-height: 48px;
+    border-radius: 999px;
+    padding: 0 16px;
+    background: white;
+  }
+
+  .checkline {
+    min-height: 48px;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-weight: 900;
+    color: var(--accent-dark);
+  }
+
+  .checkline input {
+    width: 21px;
+    height: 21px;
+  }
+
+  .mobile-tip {
+    margin: 4px 4px 12px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  tbody {
+    gap: 14px;
+  }
+
+  tr.product-row {
+    border-radius: 22px;
+    background: #fffdf9;
+    border-color: rgba(164, 101, 69, 0.18);
+    box-shadow: 0 8px 24px rgba(75, 50, 32, 0.075);
+  }
+
+  td.product-name-cell {
+    padding: 16px 16px 13px;
+    background: linear-gradient(180deg, #fff7ee 0%, #fffaf5 100%);
+    border-bottom: 1px solid rgba(164, 101, 69, 0.14);
+  }
+
+  td.product-name-cell strong {
+    font-size: 18px;
+    line-height: 1.45;
+    letter-spacing: .01em;
+  }
+
+  .limit-badge {
+    margin-top: 9px;
+    padding: 5px 11px;
+    font-size: 12.5px;
+    background: #f2e5d9;
+  }
+
+  td {
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(232, 220, 207, 0.72);
+    background: white;
+    text-align: right;
+    font-size: 15px;
+  }
+
+  td::before {
+    min-width: 0;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  td[data-label="款式"] {
+    font-weight: 800;
+  }
+
+  td[data-label="款式"]:has(+ td.price) {
+    min-height: 44px;
+  }
+
+  td.price,
+  td.line-total {
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  td.line-total {
+    background: #fff8f0;
+    color: var(--accent-dark);
+  }
+
+  td.qty-cell {
+    display: block;
+    padding: 14px 16px;
+    background: #fffaf4;
+    text-align: left;
+  }
+
+  td.qty-cell::before {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .qty-control {
+    display: grid;
+    grid-template-columns: 46px minmax(74px, 96px) 46px;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .qty-control button {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+    box-shadow: 0 8px 18px rgba(116, 67, 44, 0.16);
+  }
+
+  .qty-control input {
+    width: 100%;
+    height: 46px;
+    border-radius: 16px;
+    font-weight: 800;
+    background: #fffdf9;
+  }
+
+  .limit-message {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 9px auto 0;
+    padding: 4px 11px;
+    border-radius: 999px;
+    background: #f4eadf;
+    color: var(--muted);
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .limit-reached .limit-message {
+    background: #ead8c8;
+    color: var(--accent-dark);
+  }
+
+  td.note {
+    padding: 12px 16px 15px;
+    background: #fffdf9;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  td.note::before {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  td.note:empty {
+    display: none;
+  }
+
+  .mobile-total-bar {
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    min-height: 72px;
+    border-radius: 22px;
+    padding: 12px 14px;
+    background: rgba(46, 38, 31, 0.94);
+  }
+
+  .mobile-total-bar strong {
+    font-size: 22px;
+  }
+
+  .mobile-total-bar a {
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .qty-control {
+    grid-template-columns: 42px minmax(66px, 84px) 42px;
+    gap: 8px;
+  }
+
+  .qty-control button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .qty-control input {
+    height: 42px;
+  }
+}
